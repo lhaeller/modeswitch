@@ -1,0 +1,86 @@
+train=
+tired:
+   pkm + music (rock or lofi)
+   audionap (vaporwave or podcast)
+   daydream and music (NieR, Ghibli/FF/Elder Scrolls/ME:Catalyst -> cool, chill ambiente)
+awake:
+   program
+   do anki
+   brainstorm (programming, problems)
+bored:
+   read manga  
+   program ???? internet culture??? 
+   saved youtube videos
+
+............................
+
+buslike=
+tired:
+   daydream and music (NieR, Ghibli/FF/Elder Scrolls/ME:Catalyst -> cool, chill ambiente)
+   audionap (chill podcasts or music)
+bored:
+   internet culture
+   brainstorm (programs, ...)
+awake:
+   emails
+   podcasts (informative)
+............................
+
+school=
+awake:
+   work on assignements
+   do homework
+   learn (anki, literature)
+bored:
+   socialize
+   internet culture (reddit, imgur)
+   watch stored videos (yt, south park, movies)
+tired:
+   audionap (chill podcasts or music)
+
+
+............................
+
+home=
+tired:
+   play the guitar
+   audio nap (jazz - pop, vaaty; other stuff)
+   pkm + music
+  
+bored:
+   read graphic novel or manga
+   gaming (mirror's edge, apex, destiny)
+   watch stored videos (yt, south park, movies)
+
+awake:
+   read your book
+   meditate
+   flex
+
+............................
+
+work=
+tired:
+   internet culture (imgur)
+bored:
+   internet culture (reddit)
+   socialize
+awake:
+    program with music (synthwave or lofi)
+    push userstories (talking or emails)
+
+
+
+
+.............................
+playlists: spotify
+   Hip Hop - lofi, Electro - Synthwave -> Programming with music
+   Hip Hop - lofi, Rock - Rock -> pkm with music
+   Hip Hop - lofi, Electro - Vaporwave, Electro - Synthwave -> audionap
+
+
+
+playlists: youtube
+   Chrono Trigger Resurrection - Corridors of Time (1 hour Loop) (https://www.youtube.com/watch?v=fJpp-Uj3c64)
+   MINCECRAFT & CHILL
+   Medieval Inn 
