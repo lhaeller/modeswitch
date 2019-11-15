@@ -43,6 +43,10 @@ class Controller{
 
         }
 
+        if(this.round == 2){
+            this.model.loadActivityOptions(this.lastAnswer);
+        }
+
         console.log(`round: ${this.round}`);
 
     }
@@ -89,11 +93,19 @@ class Model{
         this.QnA = [
             {question:"WHERE ARE YOU?",answers:[{value:"train",text:"on the train"},{value:"buslike",text:"bus / tram"},{value:"home",text:"at home"},{value:"school",text:"at school"},{value:"work",text:"at work"}]},
 
-            {question:"HOW ARE YOU?",answers:[{value:"tired af-burned mind",text:"tired af",alternativetext:"burned mind"},{value:"awake",text:"wide awake" ,alternativetext:"awake"},{value:"restless-bored", text:"bored",alternativetext:"restless"}]},
+            {question:"HOW ARE YOU?",answers:[{value:"tired af-burned-mind",text:"tired af",alternativetext:"burned mind"},{value:"awake",text:"wide awake" ,alternativetext:"awake"},{value:"restless-bored", text:"bored",alternativetext:"restless"}]},
 
         ];
 
-        this.location;
+        this.activities = [
+            // TODO: create an object for each location-state setup
+            // TODO: fill in options
+            {location:"work",state:"tired af-burned-mind",options:[]}
+
+        ];
+
+        this.locationOfUser;
+        this.stateOfUser;
     }
 
     loadNextQnA(lastAnswer, round){
@@ -164,10 +176,16 @@ class Model{
 
     }
 
+    loadActivityOptions(state){
+
+        this.stateOfUser = state;
+
+
+    }
 
 
     setAsLocation(location){
-        this.location = location;
+        this.locationOfUser = location;
     }
 
     loadStateDescriptions(modeOfStates){
