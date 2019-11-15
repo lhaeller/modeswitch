@@ -21,19 +21,59 @@ class Controller{
 
         console.log("initialize...")
         
-        let data = this.model.loadQnA(this.round);
-        let question = data.question;
-        let answers = this.determineAnswerText(this.lastAnswer,data.answers);
+        // let answers = this.handOverQnA();
         //let answers = data.answers; // foreach
-        this.view.showQnA(question, answers);
+        // this.view.showQnA(question, answers);
+        this.handOverQnA();
+        this.addEventListenerToWebsite();
     }
 
-    determineAnswerText(lastAnswer,nextAnswers){
+    handOverQnA(){
 
         console.log("determineAnswerText....");
-        console.log(`lastAnswer: ${lastAnswer}`);
+        console.log(`lastAnswer: ${this.lastAnswer}`);
 
-        return this.model.loadNextAnswer(lastAnswer);
+        let data = this.model.loadQnA(this.round);
+        let question = data.question;
+
+        // return this.model.loadNextAnswer(this.lastAnswer);
+        let answers = this.model.loadNextAnswers(this.lastAnswer);
+
+        this.view.showQnA(question, answers);
+
+    }
+
+    addEventListenerToWebsite(){
+        document.addEventListener('click', (event) => {
+    
+            this.interpretEvent(event,'click');
+        
+        });
+
+    }
+
+    interpretEvent(event, eventDescription){
+
+
+        if(eventDescription == 'click'){
+
+            let className = event.srcElement.className;
+            let id = event.srcElement.id;        
+
+            if(className == 'answer-button'){
+
+                let button = document.getElementById(id);
+                let buttonValue = button.value;
+                this.lastAnswer = buttonValue;
+
+                // hand over QnA to view
+                this.handOverQnA();
+
+            }
+
+
+        }
+
     }
     
 }
@@ -55,7 +95,7 @@ class Model{
 
     }
 
-    loadNextAnswer(lastAnswer){
+    loadNextAnswers(lastAnswer){
 
         let nextAnswers;
 
@@ -74,7 +114,6 @@ class Model{
             let textModes = ["text","text","text"];
             console.table([textModes]);
             nextAnswers = this.loadStateDescriptions(textModes);
-    
         }
 
         return nextAnswers;
@@ -128,7 +167,7 @@ class View{
         html += `<h1>${question}</h1>`;
         
         answers.forEach(answer => {
-            html += `<button value='${answer.value}'>${answer.text}</button>`
+            html += `<button value='${answer.value}' class='answer-button' id='${answer.value}-answer'>${answer.text}</button>`
         });
 
         document.getElementById('container').innerHTML = html;
