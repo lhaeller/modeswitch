@@ -30,16 +30,20 @@ class Controller{
 
     handOverQnA(){
 
-        console.log("determineAnswerText....");
+        console.log("handOverQnA....");
         console.log(`lastAnswer: ${this.lastAnswer}`);
 
-        let data = this.model.loadQnA(this.round);
-        let question = data.question;
+        if(this.round == 0 || this.round == 1){
+            let data = this.model.loadNextQnA(this.lastAnswer,this.round);
+            let question = data.question;
+            let answers = data.answers;
+        
+            this.view.showQnA(question, answers);
+            this.round++; // TODO: check whether to widen scope of this
 
-        // return this.model.loadNextAnswer(this.lastAnswer);
-        let answers = this.model.loadNextAnswers(this.lastAnswer);
+        }
 
-        this.view.showQnA(question, answers);
+        console.log(`round: ${this.round}`);
 
     }
 
@@ -85,39 +89,85 @@ class Model{
         this.QnA = [
             {question:"WHERE ARE YOU?",answers:[{value:"train",text:"on the train"},{value:"buslike",text:"bus / tram"},{value:"home",text:"at home"},{value:"school",text:"at school"},{value:"work",text:"at work"}]},
 
-            {question:"HOW ARE YOU?",answers:[{value:"tired af-burned mind",text:"tired af",alternativetext:"tired"},{value:"awake",text:"wide awake"   ,alternativetext:"chill"},{value:"restless-bored", text:"bored",alternativetext:"restless"}]}
+            {question:"HOW ARE YOU?",answers:[{value:"tired af-burned mind",text:"tired af",alternativetext:"burned mind"},{value:"awake",text:"wide awake" ,alternativetext:"awake"},{value:"restless-bored", text:"bored",alternativetext:"restless"}]},
+
         ];
+
+        this.location;
     }
 
-    loadQnA(round){
-        console.log("loadQnA...");
-        return this.QnA[round];
+    loadNextQnA(lastAnswer, round){
 
-    }
+        let qnaData;
 
-    loadNextAnswers(lastAnswer){
+        let nextQuestion = this.QnA[round].question;
 
         let nextAnswers;
 
         if(lastAnswer == ""){
 
-            let QnA = this.loadQnA(0);
-            nextAnswers = QnA.answers;
+            // let QnA = this.loadQnA(0);
+            // nextAnswers = QnA.answers;
+
+            nextAnswers = this.QnA[round].answers;
 
         }
 
-
-        //TODO: add other options
         if(lastAnswer == "work"){
-
+            this.setAsLocation(lastAnswer);
             console.log(`case: ${lastAnswer}`);
             let textModes = ["text","text","text"];
             console.table([textModes]);
             nextAnswers = this.loadStateDescriptions(textModes);
         }
 
-        return nextAnswers;
+        if(lastAnswer == "home"){
+            this.setAsLocation(lastAnswer);
+            console.log(`case: ${lastAnswer}`);
+            let textModes = ["text","text","alternative"];
+            console.table([textModes]);
+            nextAnswers = this.loadStateDescriptions(textModes);
+        }
 
+        if(lastAnswer == "school"){
+            this.setAsLocation(lastAnswer);
+            console.log(`case: ${lastAnswer}`);
+            let textModes = ["text","text","text"];
+            console.table([textModes]);
+            nextAnswers = this.loadStateDescriptions(textModes);
+        }
+
+        if(lastAnswer == "train"){
+            this.setAsLocation(lastAnswer);
+            console.log(`case: ${lastAnswer}`);
+            let textModes = ["alternative","alternative","text"];
+            console.table([textModes]);
+            nextAnswers = this.loadStateDescriptions(textModes);
+        }
+
+        if(lastAnswer == "buslike"){
+            this.setAsLocation(lastAnswer);
+            console.log(`case: ${lastAnswer}`);
+            let textModes = ["alternative","alternative","text"];
+            console.table([textModes]);
+            nextAnswers = this.loadStateDescriptions(textModes);
+        }
+        
+        qnaData = {
+            question:nextQuestion,
+            answers:nextAnswers
+        }
+        console.log('qnaData:');
+        console.table([qnaData]);
+
+        return qnaData;
+
+    }
+
+
+
+    setAsLocation(location){
+        this.location = location;
     }
 
     loadStateDescriptions(modeOfStates){
