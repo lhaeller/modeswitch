@@ -93,15 +93,83 @@ class Model{
         this.QnA = [
             {question:"WHERE ARE YOU?",answers:[{value:"train",text:"on the train"},{value:"buslike",text:"bus / tram"},{value:"home",text:"at home"},{value:"school",text:"at school"},{value:"work",text:"at work"}]},
 
-            {question:"HOW ARE YOU?",answers:[{value:"tired af-burned-mind",text:"tired af",alternativetext:"burned mind"},{value:"awake",text:"wide awake" ,alternativetext:"awake"},{value:"restless-bored", text:"bored",alternativetext:"restless"}]},
+            {question:"HOW ARE YOU?",answers:[{value:"tired",text:"tired af",alternativetext:"burned mind"},{value:"awake",text:"wide awake" ,alternativetext:"awake"},{value:"restless", text:"bored",alternativetext:"restless"}]},
 
         ];
 
         this.activities = [
             // TODO: create an object for each location-state setup
             // TODO: fill in options
-            {location:"work",state:"tired af-burned-mind",options:[]}
-
+            {location:"work",state:"tired",options:[
+                {maintext:"internet culture",subtext:"imgur",nameLinkedCards:["imgur"]},
+                {maintext:"go for a walk",subtext:"",nameLinkedCards:[]},
+                {maintext:"socialize",subtext:"",nameLinkedCards:[]}
+            ]},
+            {location:"work",state:"awake",options:[
+                {maintext:"program with music",subtext:"",nameLinkedCards:["outrun","best for studies selection","lofi","synthwave"]},
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:[]}
+            ]},
+            {location:"work",state:"restless",options:[
+                {maintext:"program with music",subtext:"",nameLinkedCards:["outrun","best for studies selection","lofi","synthwave"]},
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:[]}
+            ]},
+            {location:"home",state:"tired",options:[
+                {maintext:"play the guitar",subtext:"",nameLinkedCards:[]},
+                {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["lofi","rock"]},
+                {maintext:"play fast game",subtext:"apex, mirror's edge",nameLinkedCards:[]}
+            ]},
+            {location:"home",state:"awake",options:[
+                {maintext:"program with music",subtext:"",nameLinkedCards:["outrun","best for studies selection","lofi","synthwave"]},
+                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["best for studies selection"]},
+                {maintext:"read intense book",subtext:"",nameLinkedCards:[]}
+            ]},
+            {location:"home",state:"restless",options:[
+                {maintext:"enter reality",subtext:"flex, work out, meditation",nameLinkedCards:[]},
+                {maintext:"enter story",subtext:"destiny - strike, dark souls, bloodborne; manga, graphic novel",nameLinkedCards:[]},
+                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:[]}
+            ]},
+            {location:"school",state:"tired",options:[
+                {maintext:"audionap",subtext:"",nameLinkedCards:["ambiente ani-game","chill podcasts","metal","long songs","vaporwave"]},
+                {maintext:"socialize",subtext:"",nameLinkedCards:[]},
+                {maintext:"internet culture",subtext:"imgur",nameLinkedCards:["imgur"]}
+            ]},
+            {location:"school",state:"awake",options:[
+                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["best for studies selection"]},
+                {maintext:"homework",subtext:"",nameLinkedCards:[]},
+                {maintext:"assignements",subtext:"",nameLinkedCards:[]}
+            ]},
+            {location:"school",state:"restless",options:[
+                {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["reddit"]},
+                {maintext:"program with music",subtext:"",nameLinkedCards:["outrun","best for studies selection","lofi","synthwave"]},
+                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["best for studies selection"]}
+            ]},
+            {location:"train",state:"tired",options:[
+                {maintext:"audionap",subtext:"",nameLinkedCards:["ambiente ani-game","chill podcasts","metal","long songs","vaporwave"]},
+                {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["lofi","rock"]},
+                {maintext:"daydream and music",subtext:"",nameLinkedCards:["ambiente ani-game"]}
+            ]},
+            {location:"train",state:"awake",options:[
+                {maintext:"program with music",subtext:"",nameLinkedCards:["outrun","best for studies selection","lofi","synthwave"]},
+                {maintext:"assignements",subtext:"",nameLinkedCards:[]},
+                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["best for studies selection"]}
+            ]},
+            {location:"train",state:"restless",options:[
+                {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["reddit"]},
+                {maintext:"informative podcast",subtext:"",nameLinkedCards:[]},
+                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["best for studies selection"]}
+            ]},
+            {location:"buslike",state:"tired",options:[
+                {maintext:"audionap",subtext:"",nameLinkedCards:["ambiente ani-game","chill podcasts","metal","long songs","vaporwave"]},
+                {maintext:"daydream and music",subtext:"",nameLinkedCards:["ambiente ani-game"]}
+            ]},
+            {location:"buslike",state:"awake",options:[
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:[]}
+            ]},
+            {location:"buslike",state:"restless",options:[
+                {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["reddit"]},
+                {maintext:"informative podcast",subtext:"",nameLinkedCards:[]},
+                {maintext:"learn",subtext:"read, load anki, test anki",nameLinkedCards:["best for studies selection"]}
+            ]}
         ];
 
         this.locationOfUser;
@@ -181,6 +249,29 @@ class Model{
         this.stateOfUser = state;
 
 
+
+    }
+
+    loadActivities(){
+
+        //TODO: externalize data
+        let possibleLocations = ['work','home','school','train','buslike'];
+        let possibleStates = ['awake','tired','restless']
+
+        let combinations = new Map();
+        
+        possibleLocations.forEach(possibleLocation => {
+
+            possibleStates.forEach(possibleState => {
+
+                let combo = `${possibleLocation}+${possibleState}`;
+                console.log(`setting combo: ${combo}`);
+                combinations.set(combo,undefined);
+
+            });
+        });
+
+        this.activities;
     }
 
 
