@@ -32,6 +32,7 @@ class Controller{
 
         console.log("handOverQnA....");
         console.log(`lastAnswer: ${this.lastAnswer}`);
+        console.log(`%c round: ${this.round}`,"color:red;");
 
         if(this.round == 0 || this.round == 1){
             let data = this.model.loadNextQnA(this.lastAnswer,this.round);
@@ -39,15 +40,15 @@ class Controller{
             let answers = data.answers;
         
             this.view.showQnA(question, answers);
-            this.round++; // TODO: check whether to widen scope of this
 
         }
 
         if(this.round == 2){
-            this.model.loadActivityOptions(this.lastAnswer);
+            let data = this.model.loadActivityOptions(this.lastAnswer);
+            // TODO: show in view
         }
-
-        console.log(`round: ${this.round}`);
+        
+        this.round++;
 
     }
 
@@ -183,54 +184,56 @@ class Model{
         let nextQuestion = this.QnA[round].question;
 
         let nextAnswers;
+        let textModes;
 
-        if(lastAnswer == ""){
+        switch(lastAnswer){
 
-            // let QnA = this.loadQnA(0);
-            // nextAnswers = QnA.answers;
+            case "work":
+                this.setAsLocation(lastAnswer);
+                console.log(`case: ${lastAnswer}`);
+                textModes = ["text","text","text"];
+                console.table([textModes]);
+                nextAnswers = this.loadStateDescriptions(textModes);
+                break;
+            
 
-            nextAnswers = this.QnA[round].answers;
+            case "home":
+                this.setAsLocation(lastAnswer);
+                console.log(`case: ${lastAnswer}`);
+                textModes = ["text","text","alternative"];
+                console.table([textModes]);
+                nextAnswers = this.loadStateDescriptions(textModes);
+                break;
 
-        }
+            case "school":
+                this.setAsLocation(lastAnswer);
+                console.log(`case: ${lastAnswer}`);
+                textModes = ["text","text","text"];
+                console.table([textModes]);
+                nextAnswers = this.loadStateDescriptions(textModes);
+                break;
+            
 
-        if(lastAnswer == "work"){
-            this.setAsLocation(lastAnswer);
-            console.log(`case: ${lastAnswer}`);
-            let textModes = ["text","text","text"];
-            console.table([textModes]);
-            nextAnswers = this.loadStateDescriptions(textModes);
-        }
+            case "train":
+                this.setAsLocation(lastAnswer);
+                console.log(`case: ${lastAnswer}`);
+                textModes = ["alternative","alternative","text"];
+                console.table([textModes]);
+                nextAnswers = this.loadStateDescriptions(textModes);
+                break;
 
-        if(lastAnswer == "home"){
-            this.setAsLocation(lastAnswer);
-            console.log(`case: ${lastAnswer}`);
-            let textModes = ["text","text","alternative"];
-            console.table([textModes]);
-            nextAnswers = this.loadStateDescriptions(textModes);
-        }
+            case "buslike":
+                this.setAsLocation(lastAnswer);
+                console.log(`case: ${lastAnswer}`);
+                textModes = ["alternative","alternative","text"];
+                console.table([textModes]);
+                nextAnswers = this.loadStateDescriptions(textModes);
+                break;
+            
+            default:
+                nextAnswers = this.QnA[round].answers;
+                break;
 
-        if(lastAnswer == "school"){
-            this.setAsLocation(lastAnswer);
-            console.log(`case: ${lastAnswer}`);
-            let textModes = ["text","text","text"];
-            console.table([textModes]);
-            nextAnswers = this.loadStateDescriptions(textModes);
-        }
-
-        if(lastAnswer == "train"){
-            this.setAsLocation(lastAnswer);
-            console.log(`case: ${lastAnswer}`);
-            let textModes = ["alternative","alternative","text"];
-            console.table([textModes]);
-            nextAnswers = this.loadStateDescriptions(textModes);
-        }
-
-        if(lastAnswer == "buslike"){
-            this.setAsLocation(lastAnswer);
-            console.log(`case: ${lastAnswer}`);
-            let textModes = ["alternative","alternative","text"];
-            console.table([textModes]);
-            nextAnswers = this.loadStateDescriptions(textModes);
         }
         
         qnaData = {
@@ -248,34 +251,40 @@ class Model{
 
         this.stateOfUser = state;
 
-
-
+        let selection = `${this.locationOfUser}-${this.stateOfUser}`;
+        let activityOptions = this.loadActivities();
+        let matchingActivities = activityOptions.get(selection);
+        console.log(`these are the matching activities for the selection "${selection}"`);
+        console.table([matchingActivities]);
+        return matchingActivities;
     }
 
     loadActivities(){
 
-        //TODO: externalize data
-        let possibleLocations = ['work','home','school','train','buslike'];
-        let possibleStates = ['awake','tired','restless']
+        // {location:"buslike",state:"restless",options:[
+        //     {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["reddit"]},
+        //     {maintext:"informative podcast",subtext:"",nameLinkedCards:[]},
+        //     {maintext:"learn",subtext:"read, load anki, test anki",nameLinkedCards:["best for studies selection"]}
+        // ]}
 
         let combinations = new Map();
-        
-        possibleLocations.forEach(possibleLocation => {
 
-            possibleStates.forEach(possibleState => {
-
-                let combo = `${possibleLocation}+${possibleState}`;
-                console.log(`setting combo: ${combo}`);
-                combinations.set(combo,undefined);
-
-            });
+        this.activities.forEach(element => {
+            let combo = `${element.location}-${element.state}`;
+            console.log(`loading combo: ${combo}`);
+            combinations.set(combo,element.options);
+            console.log('setting these activity options...');
+            console.table([element.options]);
+            console.log("...........................");
+            console.log("");
         });
 
-        this.activities;
+        return combinations;
     }
 
 
     setAsLocation(location){
+        console.log(`%c setting this location:${location}`,'color:green');
         this.locationOfUser = location;
     }
 
@@ -285,8 +294,6 @@ class Model{
 
         let descriptions = [];
         let answerData = this.QnA[1].answers;
-        // console.log("answerData:");
-        // console.table([answerData]);
 
         let i = 0;
 
