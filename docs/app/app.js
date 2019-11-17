@@ -45,7 +45,7 @@ class Controller{
 
         if(this.round == 2){
             let data = this.model.loadActivityOptions(this.lastAnswer);
-            // TODO: show in view
+            this.view.showOptions(data);
         }
         
         this.round++;
@@ -175,6 +175,7 @@ class Model{
 
         this.locationOfUser;
         this.stateOfUser;
+        this.optionsForUser;
     }
 
     loadNextQnA(lastAnswer, round){
@@ -256,6 +257,9 @@ class Model{
         let matchingActivities = activityOptions.get(selection);
         console.log(`these are the matching activities for the selection "${selection}"`);
         console.table([matchingActivities]);
+
+        this.optionsForUser = matchingActivities;
+
         return matchingActivities;
     }
 
@@ -339,6 +343,26 @@ class View{
         document.getElementById('container').innerHTML = html;
         
     }
+
+    showOptions(options){
+
+        let html = '';
+        let placeholder = 0;
+        html += `<h1>Do One</h1>`;
+
+
+        options.forEach(option => {
+
+            html += `<button value='${option.nameLinkedCards}' class='option' id='option-${placeholder}'>${option.maintext}
+            <br><i><span class="subtext">${option.subtext}</span></i>
+            </button>`;
+            placeholder++;
+        });
+
+        document.getElementById('container').innerHTML = html;
+        
+    }
+
 
 }
 
