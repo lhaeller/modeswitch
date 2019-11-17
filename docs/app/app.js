@@ -117,7 +117,8 @@ class Model{
             {location:"home",state:"tired",options:[
                 {maintext:"play the guitar",subtext:"",nameLinkedCards:[]},
                 {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["lofi","rock"]},
-                {maintext:"play fast game",subtext:"apex, mirror's edge",nameLinkedCards:[]}
+                {maintext:"play fast game",subtext:"apex, mirror's edge",nameLinkedCards:[]},
+                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:[]}
             ]},
             {location:"home",state:"awake",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["outrun","best for studies selection","lofi","synthwave"]},
