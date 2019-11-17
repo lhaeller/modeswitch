@@ -115,7 +115,7 @@ class Model{
                 {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:[]}
             ]},
             {location:"home",state:"tired",options:[
-                {maintext:"play the guitar",subtext:"",nameLinkedCards:[]},
+                {maintext:"audionap",subtext:"",nameLinkedCards:["ambiente ani-game","chill podcasts","metal","long songs","vaporwave"]},
                 {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["lofi","rock"]},
                 {maintext:"play fast game",subtext:"apex, mirror's edge",nameLinkedCards:[]},
                 {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:[]}
