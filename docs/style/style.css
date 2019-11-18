@@ -1,7 +1,29 @@
-.linked-card{
-    border: 2px solid black;
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto 2em;
+
 }
 
 .domain-field{
-    border: 2px solid green;
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-size: 10px;
+}
+
+.answer-button, .linked-card, .option{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    padding: 1em;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: Verdana;
+    width: 33%;    
+}
+
+a {
+    text-decoration: none;
 }

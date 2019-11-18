@@ -321,12 +321,6 @@ class Model{
 
     loadActivities(){
 
-        // {location:"buslike",state:"restless",options:[
-        //     {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["reddit"]},
-        //     {maintext:"informative podcast",subtext:"",nameLinkedCards:[]},
-        //     {maintext:"learn",subtext:"read, load anki, test anki",nameLinkedCards:["best for studies selection"]}
-        // ]}
-
         let combinations = new Map();
 
         this.activities.forEach(element => {
@@ -359,7 +353,6 @@ class Model{
     }
 
     loadLinkedCards(){
-        /**{uniqueName:"SpotifyElectroVaporwave", domain:"Spotify", description:"Vaporwave",link:"https://open.spotify.com/playlist/2nWMkr2HwC6nfSBkN8Dg9Z"}*/
 
         let cards = new Map();
 
@@ -450,12 +443,12 @@ class View{
     showLinkedCards(linkedCards){
 
         let html = '';
-        html += `<h1>Do One</h1>`;
+        html += `<h1>Choose A Link</h1>`;
 
 
         linkedCards.forEach(card => {
 
-            html += `<a href="${card.link}"><div value='${card.nameLinkedCards}' class='linked-card' id='${card.unqiueName}'>${card.description}
+            html += `<a class='linked-card' href="${card.link}" id='${card.unqiueName}'><div>${card.description}
             <br><span class="domain-field">${card.domain}</span>
             </div></a>`;
         });
