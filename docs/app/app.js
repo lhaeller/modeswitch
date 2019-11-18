@@ -76,6 +76,23 @@ class Controller{
 
             }
 
+            if(className == 'option'){
+
+                let button = document.getElementById(id);
+                let optionValue = button.value;
+
+                // TODO: split by , 
+                let namesOfSelectedLinkedCards = optionValue.split(",");
+
+                console.table([namesOfSelectedLinkedCards]);
+
+                // TODO: load via model
+                let linkedCards = this.model.loadLinkedCardsOptions(namesOfSelectedLinkedCards);
+
+                // TODO: make view load linkedCards
+                this.view.showLinkedCards(linkedCards);
+            }
+
 
         }
 
@@ -326,6 +343,35 @@ class Model{
         return combinations;
     }
 
+    loadLinkedCardsOptions(uniqueNames){
+
+        let selectedLinkedCards = new Map();
+        let cards = this.loadLinkedCards();
+
+        uniqueNames.forEach(name => {
+
+            let card = cards.get(name);
+            selectedLinkedCards.set(name,card);
+            
+        });
+
+        return selectedLinkedCards;
+
+    }
+
+    loadLinkedCards(){
+        /**{uniqueName:"SpotifyElectroVaporwave", domain:"Spotify", description:"Vaporwave",link:"https://open.spotify.com/playlist/2nWMkr2HwC6nfSBkN8Dg9Z"}*/
+
+        let cards = new Map();
+
+        this.linkedCards.forEach(card => {
+            cards.set(card.uniqueName, card);
+        });
+
+        return cards;
+
+    }
+
 
     setAsLocation(location){
         console.log(`%c setting this location:${location}`,'color:green');
@@ -402,6 +448,25 @@ class View{
         document.getElementById('container').innerHTML = html;
         
     }
+
+    showLinkedCards(linkedCards){
+
+        let html = '';
+        html += `<h1>Do One</h1>`;
+
+
+        linkedCards.forEach(card => {
+
+            html += `<a href="${card.link}"><div value='${card.nameLinkedCards}' class='linked-card' id='${card.unqiueName}'>${card.description}
+            <br><span class="domain-field">${card.domain}</span>
+            </div></a>`;
+        });
+
+        document.getElementById('container').innerHTML = html;
+
+
+    }
+
 
 
 }
