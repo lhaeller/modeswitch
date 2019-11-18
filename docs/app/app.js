@@ -93,7 +93,6 @@ class Controller{
                 this.view.showLinkedCards(linkedCards);
             }
 
-
         }
 
     }
@@ -440,7 +439,6 @@ class View{
         options.forEach(option => {
 
             html += `<button value='${option.nameLinkedCards}' class='option' id='option-${placeholder}'>${option.maintext}
-            <br><i><span class="subtext">${option.subtext}</span></i>
             </button>`;
             placeholder++;
         });
