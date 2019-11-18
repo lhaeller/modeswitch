@@ -1,7 +1,3 @@
-
-
-
-
 class Controller{
  
     constructor(){
@@ -99,79 +95,122 @@ class Model{
         ];
 
         this.activities = [
-            // TODO: create an object for each location-state setup
-            // TODO: fill in options
             {location:"work",state:"tired",options:[
-                {maintext:"internet culture",subtext:"imgur",nameLinkedCards:["imgur"]},
+                {maintext:"internet culture",subtext:"imgur",nameLinkedCards:["Imgur"]},
                 {maintext:"go for a walk",subtext:"",nameLinkedCards:[]},
                 {maintext:"socialize",subtext:"",nameLinkedCards:[]}
             ]},
             {location:"work",state:"awake",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["outrun","best for studies selection","lofi","synthwave"]},
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:[]}
+                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave"]},
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["Swing,JazzPop,JazzSwing"]}
             ]},
             {location:"work",state:"restless",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["outrun","best for studies selection","lofi","synthwave"]},
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:[]}
+                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyRockSwing,SpotifyJazzSwing,SpotifyJazzPop"]}
             ]},
             {location:"home",state:"tired",options:[
-                {maintext:"audionap",subtext:"",nameLinkedCards:["ambiente ani-game","chill podcasts","metal","long songs","vaporwave"]},
-                {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["lofi","rock"]},
-                {maintext:"play fast game",subtext:"apex, mirror's edge",nameLinkedCards:[]},
-                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:[]}
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeAniGameOST","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave","SpotifyPopPop"]},
+                {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["SpotifyHipHopLofi","SpotifyRockRock"]},
+                {maintext:"play fast game",subtext:"apex, mirror's edge",nameLinkedCards:["ListFastGames"]},
+                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["YouTubeWatchLaterList"]}
             ]},
             {location:"home",state:"awake",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["outrun","best for studies selection","lofi","synthwave"]},
-                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["best for studies selection"]},
+                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave"]},
+                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]},
                 {maintext:"read intense book",subtext:"",nameLinkedCards:[]}
             ]},
             {location:"home",state:"restless",options:[
                 {maintext:"enter reality",subtext:"flex, work out, meditation",nameLinkedCards:[]},
-                {maintext:"enter story",subtext:"destiny - strike, dark souls, bloodborne; manga, graphic novel",nameLinkedCards:[]},
-                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:[]}
+                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
+                {maintext:"enter story",subtext:"destiny - strike, dark souls, bloodborne; manga, graphic novel",nameLinkedCards:["ListStoryGames"]},
+                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["YouTubeWatchLaterList"]}
             ]},
             {location:"school",state:"tired",options:[
-                {maintext:"audionap",subtext:"",nameLinkedCards:["ambiente ani-game","chill podcasts","metal","long songs","vaporwave"]},
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeAniGameOST","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave","SpotifyPopPop"]},
                 {maintext:"socialize",subtext:"",nameLinkedCards:[]},
-                {maintext:"internet culture",subtext:"imgur",nameLinkedCards:["imgur"]}
+                {maintext:"internet culture",subtext:"imgur",nameLinkedCards:["Imgur"]}
             ]},
             {location:"school",state:"awake",options:[
-                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["best for studies selection"]},
+                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]},
                 {maintext:"homework",subtext:"",nameLinkedCards:[]},
                 {maintext:"assignements",subtext:"",nameLinkedCards:[]}
             ]},
             {location:"school",state:"restless",options:[
-                {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["reddit"]},
-                {maintext:"program with music",subtext:"",nameLinkedCards:["outrun","best for studies selection","lofi","synthwave"]},
-                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["best for studies selection"]}
+                {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["Reddit"]},
+                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
+                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"train",state:"tired",options:[
-                {maintext:"audionap",subtext:"",nameLinkedCards:["ambiente ani-game","chill podcasts","metal","long songs","vaporwave"]},
-                {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["lofi","rock"]},
-                {maintext:"daydream and music",subtext:"",nameLinkedCards:["ambiente ani-game"]}
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeAniGameOST","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave","SpotifyPopPop"]},
+                {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["SpotifyHipHopLofi","SpotifyRockRock"]},
+                {maintext:"daydream and music",subtext:"",nameLinkedCards:["YouTubeAniGameOST"]}
             ]},
             {location:"train",state:"awake",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["outrun","best for studies selection","lofi","synthwave"]},
+                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave"]},
                 {maintext:"assignements",subtext:"",nameLinkedCards:[]},
-                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["best for studies selection"]}
+                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"train",state:"restless",options:[
-                {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["reddit"]},
+                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
                 {maintext:"informative podcast",subtext:"",nameLinkedCards:[]},
-                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["best for studies selection"]}
+                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"buslike",state:"tired",options:[
-                {maintext:"audionap",subtext:"",nameLinkedCards:["ambiente ani-game","chill podcasts","metal","long songs","vaporwave"]},
-                {maintext:"daydream and music",subtext:"",nameLinkedCards:["ambiente ani-game"]}
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeAniGameOST","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave","SpotifyPopPop"]},
+                {maintext:"daydream and music",subtext:"",nameLinkedCards:["YouTubeAniGameOST"]}
             ]},
             {location:"buslike",state:"awake",options:[
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:[]}
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyRockSwing,SpotifyJazzPop,SpotifyJazzSwing"]},
+                {maintext:"learn",subtext:"anki",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"buslike",state:"restless",options:[
-                {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["reddit"]},
+                {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["Reddit"]},
                 {maintext:"informative podcast",subtext:"",nameLinkedCards:[]},
-                {maintext:"learn",subtext:"read, load anki, test anki",nameLinkedCards:["best for studies selection"]}
+                {maintext:"learn",subtext:"read, load anki, test anki",nameLinkedCards:["YouTubeStudyMusic"]}
             ]}
+        ];
+
+        /**
+         * "outrun","best for studies selection","lofi","synthwave","OST - fight
+         * "ambiente ani-game","chill podcasts","metal","long songs","vaporwave","pop"
+
+         */
+
+        this.linkedCards = [
+            {uniqueName:"SpotifyElectroVaporwave", domain:"Spotify", description:"Vaporwave",link:"https://open.spotify.com/playlist/2nWMkr2HwC6nfSBkN8Dg9Z"},
+			{uniqueName:"SpotifyElectroSynthwave", domain:"Spotify", description:"Synthwave",link:"https://open.spotify.com/playlist/5brFbLsjwb1hfSEXAIoNUZ"},
+			{uniqueName:"SpotifyOSTFight", domain:"Spotify", description:"Fight OST",link:"https://open.spotify.com/playlist/0wyrTc3kR0dDe12ug5TUBU"},
+			{uniqueName:"SpotifyElectroOutrun", domain:"Spotify", description:"Outrun",link:"https://open.spotify.com/playlist/4HRTw7yBrKP4c7ot2oEuWZ"},
+			{uniqueName:"SpotifyPopPop", domain:"Spotify", description:"Pop",link:"https://open.spotify.com/playlist/5IhmK5DnA7xDOHY2YpeouR"},
+			{uniqueName:"SpotifyMixLongSongs", domain:"Spotify", description:"Long Songs",link:"https://open.spotify.com/playlist/2zJSWrA1lHapRl2X4Av09T"},
+			{uniqueName:"SpotifyMetalMetal", domain:"Spotify", description:"Metal",link:"https://open.spotify.com/playlist/4erlXcZTwQo7n8i0iTukf7"},
+			{uniqueName:"YoutubePlaylistElvenpath", domain:"YouTube", description:"Tales From the Elvenpath",link:"https://www.youtube.com/watch?v=VxIyPIRzLH0&list=PLaKGqsgrt0cJ7WZ8x6BXrMIURK2E1-guH"},
+            {uniqueName:"SpotifyAlbumShadowsOfTheDyingSun", domain:"Spotify", description:"Shadows of the Dying Sun",link:"https://open.spotify.com/album/0iYAnDAQLAOXIl5bUAfYG3"},
+			{uniqueName:"ListChillPodcasts", domain:"", description:"Chill Podcasts",link:""}, //TODO: find a good place to host list
+			{uniqueName:"SpotifyRockRock", domain:"Spotify", description:"Rock",link:"https://open.spotify.com/playlist/15ikqLYNTtSAfdl2wRrYAO"},
+			{uniqueName:"SpotifyAlbumHimalaya", domain:"Spotify", description:"Himalaya",link:"https://open.spotify.com/album/0bBdlVINqpOhw9e8YRVB1J"},
+			{uniqueName:"SpotifyRockSwing", domain:"Spotify", description:"Swing",link:"https://open.spotify.com/playlist/4swSBKCt31mrwLyQDi6Nc3"},
+			{uniqueName:"SpotifyRockIndie", domain:"Spotify", description:"Indie Rock",link:"https://open.spotify.com/playlist/7eihWPjYz2UOBa3AxjTOC8"},
+			{uniqueName:"SpotifyRockPsychodelic", domain:"Spotify", description:"Psychodelic Rock",link:"https://open.spotify.com/playlist/31FFn6pny7aZSATwU32Uw2"},
+			{uniqueName:"SpotifyRockPunk", domain:"Spotify", description:"Punk Rock",link:"https://open.spotify.com/playlist/3G1nqjuFQHaCam0SiGVwcf"},
+			{uniqueName:"SpotifyJazzPop", domain:"Spotify", description:"50s Pop",link:"https://open.spotify.com/playlist/0TQtgWXQiAKvbi9gLJyffh"},
+			{uniqueName:"SpotifyJazzSwing", domain:"Spotify", description:"Jazz",link:"https://open.spotify.com/playlist/4roP0vumuqEyuQDsPID6pK"},
+			{uniqueName:"SpotifyHipHopLofi", domain:"Spotify", description:"lo fi",link:"https://open.spotify.com/playlist/6JgKb8W1Y30f6QtfgFLXPm"},
+			{uniqueName:"SpotifyOSTAmbiente", domain:"Spotify", description:"Ambiente OST",link:"https://open.spotify.com/playlist/5aprBhYKDG6mAK0ywkas9Y"},
+			{uniqueName:"SpotifySTEEEZYASFUCKRelaxLofi", domain:"Spotify", description:"STEEEZYASFUCK",link:"https://open.spotify.com/playlist/28gkj3su0EjS9tD20XTG9T"},
+            {uniqueName:"YouTubeWatchLaterList", domain:"YouTube", description:"watch later",link:"https://www.youtube.com/playlist?list=WL"},
+            {uniqueName:"YouTubeAniGameOST", domain:"YouTube", description:"AniGame OST",link:""},
+			{uniqueName:"YouTubeStudyMusic", domain:"YouTube", description:"Study Music",link:""},
+			{uniqueName:"Imgur", domain:"", description:"Imgur",link:"https://imgur.com/"},
+			{uniqueName:"Reddit", domain:"", description:"Reddit",link:"https://www.reddit.com/"},
+			{uniqueName:"ListStoryGames", domain:"", description:"Story Games",link:""}, //TODO: find a good place to host list
+			{uniqueName:"ListFastGames", domain:"", description:"Fast Games",link:""}, //TODO: find a good place to host list
+			{uniqueName:"ListInformativePodcasts", domain:"", description:"Informative Podcasts",link:""}, //TODO: find a good place to host list
+			{uniqueName:"", domain:"", description:"",link:""},
+			{uniqueName:"", domain:"", description:"",link:""},
+			{uniqueName:"", domain:"", description:"",link:""},
+			{uniqueName:"", domain:"", description:"",link:""}
+
         ];
 
         this.locationOfUser;
