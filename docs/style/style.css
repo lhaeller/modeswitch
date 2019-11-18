@@ -1,8 +1,11 @@
+body{
+    font-family: sans-serif;
+}
+
 .container{
     display: flex;
     flex-direction: column;
-    margin: auto 2em;
-
+    padding: 20em;
 }
 
 .domain-field{
@@ -19,11 +22,14 @@
     color: #000;
     padding: 1em;
     margin-top: 10px;
-    font-size: 2em;
+    font-size: 3em;
     font-family: Verdana;
-    width: 33%;    
 }
 
 a {
     text-decoration: none;
+}
+
+h1 {
+    font-size: 3.5em;
 }
