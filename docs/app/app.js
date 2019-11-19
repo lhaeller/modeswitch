@@ -198,7 +198,7 @@ class Model{
 			{uniqueName:"SpotifyMetalMetal", domain:"Spotify", description:"Metal",link:"https://open.spotify.com/playlist/4erlXcZTwQo7n8i0iTukf7"},
 			{uniqueName:"YoutubePlaylistElvenpath", domain:"YouTube", description:"Tales From the Elvenpath",link:"https://www.youtube.com/watch?v=VxIyPIRzLH0&list=PLaKGqsgrt0cJ7WZ8x6BXrMIURK2E1-guH"},
             {uniqueName:"SpotifyAlbumShadowsOfTheDyingSun", domain:"Spotify", description:"Shadows of the Dying Sun",link:"https://open.spotify.com/album/0iYAnDAQLAOXIl5bUAfYG3"},
-			{uniqueName:"ListChillPodcasts", domain:"List", description:"Chill Podcasts",link:""}, //TODO: find a good place to host list
+			{uniqueName:"ListChillPodcasts", domain:"List", description:"Chill Podcasts",link:"https://escapemod.github.io/chillpodcasts/"},
 			{uniqueName:"SpotifyRockRock", domain:"Spotify", description:"Rock",link:"https://open.spotify.com/playlist/15ikqLYNTtSAfdl2wRrYAO"},
 			{uniqueName:"SpotifyAlbumHimalaya", domain:"Spotify", description:"Himalaya",link:"https://open.spotify.com/album/0bBdlVINqpOhw9e8YRVB1J"},
 			{uniqueName:"SpotifyRockSwing", domain:"Spotify", description:"Swing",link:"https://open.spotify.com/playlist/4swSBKCt31mrwLyQDi6Nc3"},
@@ -215,9 +215,9 @@ class Model{
 			{uniqueName:"YouTubeStudyMusic", domain:"YouTube", description:"Study Music",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TIR15cz86MvNf5y_1HVRBts"},
 			{uniqueName:"Imgur", domain:"self", description:"Imgur",link:"https://imgur.com/"},
 			{uniqueName:"Reddit", domain:"self", description:"Reddit",link:"https://www.reddit.com/"},
-			{uniqueName:"ListStoryGames", domain:"List", description:"Story Games",link:""}, //TODO: find a good place to host list
-			{uniqueName:"ListFastGames", domain:"List", description:"Fast Games",link:""}, //TODO: find a good place to host list
-			{uniqueName:"ListInformativePodcasts", domain:"List", description:"Informative Podcasts",link:""}, //TODO: find a good place to host list
+			{uniqueName:"ListStoryGames", domain:"List", description:"Story Games",link:"https://escapemod.github.io/storygames/"},
+			{uniqueName:"ListFastGames", domain:"List", description:"Fast Games",link:"https://escapemod.github.io/fastgames/"},
+			{uniqueName:"ListInformativePodcasts", domain:"List", description:"Informative Podcasts",link:"https://escapemod.github.io/informativepodcasts/"},
 			{uniqueName:"YouTubeDeepsleep", domain:"YouTube", description:"deepsleep",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TJ4mhhrBCP-2dX2x7D8PBMI"},
 			{uniqueName:"YouTubeSynthwave", domain:"YouTube", description:"Synthwave",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TKhOBXx-JvgtRZdjVKzujl0"},
             {uniqueName:"YouTubeHypercode", domain:"YouTube", description:"hypercode",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TIKmrT3_mX9IQu050W1BkA-"},
