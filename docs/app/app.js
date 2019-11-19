@@ -119,12 +119,12 @@ class Model{
             {location:"work",state:"awake",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave"]},
                 {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["Swing,JazzPop,JazzSwing"]},
-                {maintext:"learn sth",subtext:"",nameLinkedCards:["ImgurLifeHackFreeCourses","YouTubeStudyMusic"]}
+                {maintext:"learn sth",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","ImgurLifeHackFreeCourses","YouTubeStudyMusic"]}
             ]},
             {location:"work",state:"restless",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
                 {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyRockSwing,SpotifyJazzSwing,SpotifyJazzPop"]},
-                {maintext:"learn sth",subtext:"",nameLinkedCards:["ImgurLifeHackFreeCourses","YouTubeStudyMusic"]}
+                {maintext:"learn sth",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","ImgurLifeHackFreeCourses","YouTubeStudyMusic"]}
             ]},
             {location:"home",state:"tired",options:[
                 {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave","SpotifyPopPop"]},
@@ -134,7 +134,7 @@ class Model{
             ]},
             {location:"home",state:"awake",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave"]},
-                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]},
+                {maintext:"learn / read ",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]},
                 {maintext:"read intense book",subtext:"",nameLinkedCards:[]}
             ]},
             {location:"home",state:"restless",options:[
@@ -149,14 +149,14 @@ class Model{
                 {maintext:"internet culture",subtext:"imgur",nameLinkedCards:["Imgur"]}
             ]},
             {location:"school",state:"awake",options:[
-                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]},
-                {maintext:"homework",subtext:"",nameLinkedCards:[]},
-                {maintext:"assignements",subtext:"",nameLinkedCards:[]}
+                {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]},
+                {maintext:"homework",subtext:"",nameLinkedCards:["TrelloStudyBoard"]},
+                {maintext:"assignements",subtext:"",nameLinkedCards:["TrelloStudyProjectsBoards"]}
             ]},
             {location:"school",state:"restless",options:[
                 {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["Reddit"]},
                 {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
-                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
+                {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"train",state:"tired",options:[
                 {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave","SpotifyPopPop"]},
@@ -165,13 +165,13 @@ class Model{
             ]},
             {location:"train",state:"awake",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave"]},
-                {maintext:"assignements",subtext:"",nameLinkedCards:[]},
-                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
+                {maintext:"assignements",subtext:"",nameLinkedCards:["TrelloStudyProjectsBoards"]},
+                {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"train",state:"restless",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
                 {maintext:"informative podcast",subtext:"",nameLinkedCards:[]},
-                {maintext:"learn",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
+                {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"buslike",state:"tired",options:[
                 {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeAniGameOST","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave","SpotifyPopPop"]},
@@ -184,7 +184,7 @@ class Model{
             {location:"buslike",state:"restless",options:[
                 {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["Reddit"]},
                 {maintext:"informative podcast",subtext:"",nameLinkedCards:[]},
-                {maintext:"learn",subtext:"read, load anki, test anki",nameLinkedCards:["YouTubeStudyMusic"]}
+                {maintext:"learn / read",subtext:"read, load anki, test anki",nameLinkedCards:["YouTubeStudyMusic"]}
             ]}
         ];
 
@@ -223,9 +223,9 @@ class Model{
             {uniqueName:"YouTubeHypercode", domain:"YouTube", description:"hypercode",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TIKmrT3_mX9IQu050W1BkA-"},
 			{uniqueName:"YouTubeVydiaLofi", domain:"YouTube", description:"vydia lofi",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TKtcjFvWvpccJ04dU2-dt6Y"},
 			{uniqueName:"ImgurLifeHackFreeCourses", domain:"Imgur", description:"free courses",link:"https://imgur.com/gallery/55Z3S"},
-			{uniqueName:"", domain:"", description:"",link:""},
-			{uniqueName:"", domain:"", description:"",link:""},
-			{uniqueName:"", domain:"", description:"",link:""},
+			{uniqueName:"LinkFreeCodeCamp", domain:"Link", description:"freeCodeCamp",link:"https://www.freecodecamp.org"},
+			{uniqueName:"TrelloStudyBoard", domain:"Trello", description:"Study Board",link:"https://trello.com/b/SBSjvyYw/3-school-board"},
+			{uniqueName:"TrelloStudyProjectsBoards", domain:"Trello", description:"Project Boards",link:"https://trello.com/grisons"},
 			{uniqueName:"", domain:"", description:"",link:""},
 			{uniqueName:"", domain:"", description:"",link:""},
 			{uniqueName:"", domain:"", description:"",link:""},
