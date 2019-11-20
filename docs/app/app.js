@@ -454,7 +454,7 @@ class View{
         linkedCards.forEach(card => {
 
             html += `<a class='linked-card' href="${card.link}" id='${card.unqiueName}'><div>${card.description}
-            <br><span class="domain-field">${card.domain}</span>
+            <br><span class="domain-field ${card.domain.toLowerCase()}">${card.domain}</span>
             </div></a>`;
         });
 

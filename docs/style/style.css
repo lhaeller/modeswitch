@@ -1,6 +1,7 @@
 body{
     font-family: sans-serif;
-
+    background-color:#fff;
+    color: #000;
 }
 .container{
     display: flex;
@@ -9,22 +10,47 @@ body{
 }
 
 .domain-field{
-    border: 2px solid #000;
-    border-radius: 5px;
-    background-color: #000;
-    color: #fff;
+    border-radius: 50px;
     font-size: 0.8em;
+    padding: 0.1em;
+}
+
+.list{
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #000;
+}
+
+.youtube{
+    border: 2px solid #b31217;
+    background-color: #b31217;
+    color: #fff;
+}
+
+.spotify{
+    border: 2px solid #1DB954;
+    background-color: #1DB954;
+    color: #000;
 }
 
 .answer-button, .linked-card, .option{
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #000;
+    border-radius: 0px;
     padding: 1em;
     margin-top: 10px;
     font-size: 3em; 
     font-family: Verdana;
+}
+
+.answer-button{
+    border: 1px solid #1BB76E;
+    background-color: #1BB76E;
+}
+
+.option, .linked-card{
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #030303;
 }
 
 a {
