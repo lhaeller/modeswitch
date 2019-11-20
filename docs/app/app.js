@@ -117,29 +117,29 @@ class Model{
                 {maintext:"socialize",subtext:"",nameLinkedCards:[]}
             ]},
             {location:"work",state:"awake",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave"]},
+                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave"]},
                 {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["Swing,JazzPop,JazzSwing"]},
                 {maintext:"learn sth",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","ImgurLifeHackFreeCourses","YouTubeStudyMusic"]}
             ]},
             {location:"work",state:"restless",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
+                {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
                 {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyRockSwing,SpotifyJazzSwing,SpotifyJazzPop"]},
                 {maintext:"learn sth",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","ImgurLifeHackFreeCourses","YouTubeStudyMusic"]}
             ]},
             {location:"home",state:"tired",options:[
                 {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave","SpotifyPopPop"]},
-                {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["SpotifyHipHopLofi","SpotifyRockRock"]},
+                {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["YouTubeVydiaLofi","SpotifyRockRock"]},
                 {maintext:"play fast game",subtext:"apex, mirror's edge",nameLinkedCards:["ListFastGames"]},
                 {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["YouTubeWatchLaterList"]}
             ]},
             {location:"home",state:"awake",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave"]},
+                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave"]},
                 {maintext:"learn / read ",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]},
                 {maintext:"read intense book",subtext:"",nameLinkedCards:[]}
             ]},
             {location:"home",state:"restless",options:[
                 {maintext:"meditate",subtext:"flex, work out, meditation",nameLinkedCards:["YouTubeDeepsleep"]},
-                {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
+                {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
                 {maintext:"enter story",subtext:"destiny - strike, dark souls, bloodborne; manga, graphic novel",nameLinkedCards:["ListStoryGames"]},
                 {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["YouTubeWatchLaterList"]}
             ]},
@@ -155,22 +155,22 @@ class Model{
             ]},
             {location:"school",state:"restless",options:[
                 {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["Reddit"]},
-                {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
+                {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
                 {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"train",state:"tired",options:[
                 {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave","SpotifyPopPop"]},
-                {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["SpotifyHipHopLofi","SpotifyRockRock"]},
+                {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["YouTubeVydiaLofi","SpotifyRockRock"]},
                 {maintext:"daydream and music",subtext:"",nameLinkedCards:["YouTubeAniGameOST"]}
             ]},
             {location:"train",state:"awake",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave"]},
+                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave"]},
                 {maintext:"assignements",subtext:"",nameLinkedCards:["TrelloStudyProjectsBoards"]},
                 {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"train",state:"restless",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","SpotifyHipHopLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
-                {maintext:"informative podcast",subtext:"",nameLinkedCards:[]},
+                {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
+                {maintext:"informative podcast",subtext:"",nameLinkedCards:["ListInformativePodcasts"]},
                 {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"buslike",state:"tired",options:[
@@ -183,7 +183,7 @@ class Model{
             ]},
             {location:"buslike",state:"restless",options:[
                 {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["Reddit"]},
-                {maintext:"informative podcast",subtext:"",nameLinkedCards:[]},
+                {maintext:"informative podcast",subtext:"",nameLinkedCards:["ListInformativePodcasts"]},
                 {maintext:"learn / read",subtext:"read, load anki, test anki",nameLinkedCards:["YouTubeStudyMusic"]}
             ]}
         ];
