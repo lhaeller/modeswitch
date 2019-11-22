@@ -140,7 +140,7 @@ class Model{
             {location:"home",state:"restless",options:[
                 {maintext:"meditate",subtext:"flex, work out, meditation",nameLinkedCards:["YouTubeDeepsleep"]},
                 {maintext:"story",subtext:"",nameLinkedCards:["LinkMAL","ListStoryGames","YouTubeStudyMusic"]},
-                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["YouTubeWatchLaterList","LinkSouthPark"]}
+                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["LinkMAL","YouTubeWatchLaterList","LinkSouthPark"]}
             ]},
             {location:"school",state:"tired",options:[
                 {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
@@ -160,7 +160,7 @@ class Model{
             {location:"train",state:"tired",options:[
                 {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
                 {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["YouTubeVydiaLofi","SpotifyRockRock"]},
-                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["YouTubeWatchLaterList","LinkSouthPark"]}
+                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["YouTubeWatchLaterList"]}
             ]},
             {location:"train",state:"awake",options:[
                 {maintext:"assignements",subtext:"",nameLinkedCards:["TrelloStudyProjectsBoards"]},
@@ -169,7 +169,7 @@ class Model{
             {location:"train",state:"restless",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
                 {maintext:"informative podcast",subtext:"",nameLinkedCards:["ListInformativePodcasts"]},
-                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["YouTubeWatchLaterList","LinkSouthPark"]}
+                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["LinkMAL","YouTubeWatchLaterList","LinkSouthPark"]}
             ]},
             {location:"buslike",state:"tired",options:[
                 {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
