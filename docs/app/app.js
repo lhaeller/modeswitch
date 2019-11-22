@@ -118,12 +118,12 @@ class Model{
             ]},
             {location:"work",state:"awake",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave"]},
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["Swing,JazzPop,JazzSwing"]},
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["Swing","JazzPop","JazzSwing"]},
                 {maintext:"learn sth",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","ImgurLifeHackFreeCourses","YouTubeStudyMusic"]}
             ]},
             {location:"work",state:"restless",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyRockSwing,SpotifyJazzSwing,SpotifyJazzPop"]},
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyRockSwing","SpotifyJazzSwing","SpotifyJazzPop"]},
                 {maintext:"learn sth",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","ImgurLifeHackFreeCourses","YouTubeStudyMusic"]}
             ]},
             {location:"home",state:"tired",options:[
@@ -178,7 +178,7 @@ class Model{
                 {maintext:"daydream and music",subtext:"",nameLinkedCards:["YouTubeAniGameOST"]}
             ]},
             {location:"buslike",state:"awake",options:[
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyRockSwing,SpotifyJazzPop,SpotifyJazzSwing"]},
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyRockSwing","SpotifyJazzPop","SpotifyJazzSwing"]},
                 {maintext:"learn",subtext:"anki",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"buslike",state:"restless",options:[
@@ -470,4 +470,3 @@ class View{
 window.onload = function(){
     var controller = new Controller();
 }
-
