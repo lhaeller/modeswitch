@@ -118,33 +118,32 @@ class Model{
             ]},
             {location:"work",state:"awake",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave"]},
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["Swing","JazzPop","JazzSwing"]},
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyElectroVaporwave","YouTubeStudyMusic"]},
                 {maintext:"learn sth",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","ImgurLifeHackFreeCourses","YouTubeStudyMusic"]}
             ]},
             {location:"work",state:"restless",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyRockSwing","SpotifyJazzSwing","SpotifyJazzPop"]},
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyElectroVaporwave","YouTubeStudyMusic"]},
                 {maintext:"learn sth",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","ImgurLifeHackFreeCourses","YouTubeStudyMusic"]}
             ]},
             {location:"home",state:"tired",options:[
-                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave","SpotifyPopPop"]},
-                {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["YouTubeVydiaLofi","SpotifyRockRock"]},
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
                 {maintext:"play fast game",subtext:"apex, mirror's edge",nameLinkedCards:["ListFastGames"]},
-                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["YouTubeWatchLaterList"]}
+                {maintext:"internet culture",subtext:"imgur",nameLinkedCards:["Imgur"]},
+                {maintext:"chill with podcast",subtext:"",nameLinkedCards:["ListChillPodcasts"]}
             ]},
             {location:"home",state:"awake",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave"]},
                 {maintext:"learn / read ",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]},
-                {maintext:"read intense book",subtext:"",nameLinkedCards:[]}
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyElectroVaporwave","YouTubeStudyMusic"]}
             ]},
             {location:"home",state:"restless",options:[
                 {maintext:"meditate",subtext:"flex, work out, meditation",nameLinkedCards:["YouTubeDeepsleep"]},
-                {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
-                {maintext:"enter story",subtext:"destiny - strike, dark souls, bloodborne; manga, graphic novel",nameLinkedCards:["ListStoryGames"]},
-                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["YouTubeWatchLaterList"]}
+                {maintext:"story",subtext:"",nameLinkedCards:["LinkMAL","ListStoryGames","YouTubeStudyMusic"]},
+                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["YouTubeWatchLaterList","LinkSouthPark"]}
             ]},
             {location:"school",state:"tired",options:[
-                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave","SpotifyPopPop"]},
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
                 {maintext:"socialize",subtext:"",nameLinkedCards:[]},
                 {maintext:"internet culture",subtext:"imgur",nameLinkedCards:["Imgur"]}
             ]},
@@ -159,30 +158,29 @@ class Model{
                 {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"train",state:"tired",options:[
-                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave","SpotifyPopPop"]},
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
                 {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["YouTubeVydiaLofi","SpotifyRockRock"]},
-                {maintext:"daydream and music",subtext:"",nameLinkedCards:["YouTubeAniGameOST"]}
+                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["YouTubeWatchLaterList","LinkSouthPark"]}
             ]},
             {location:"train",state:"awake",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave"]},
                 {maintext:"assignements",subtext:"",nameLinkedCards:["TrelloStudyProjectsBoards"]},
                 {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"train",state:"restless",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
                 {maintext:"informative podcast",subtext:"",nameLinkedCards:["ListInformativePodcasts"]},
-                {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
+                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["YouTubeWatchLaterList","LinkSouthPark"]}
             ]},
             {location:"buslike",state:"tired",options:[
-                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeAniGameOST","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave","SpotifyPopPop"]},
-                {maintext:"daydream and music",subtext:"",nameLinkedCards:["YouTubeAniGameOST"]}
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
+                {maintext:"daydream and music",subtext:"",nameLinkedCards:["YouTubeAniGameOST","YouTubeStudyMusic"]},
+                {maintext:"chill with podcast",subtext:"",nameLinkedCards:["ListChillPodcasts"]}
             ]},
             {location:"buslike",state:"awake",options:[
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyRockSwing","SpotifyJazzPop","SpotifyJazzSwing"]},
-                {maintext:"learn",subtext:"anki",nameLinkedCards:["YouTubeStudyMusic"]}
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyElectroVaporwave","YouTubeStudyMusic"]},
+                {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"buslike",state:"restless",options:[
-                {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["Reddit"]},
                 {maintext:"informative podcast",subtext:"",nameLinkedCards:["ListInformativePodcasts"]},
                 {maintext:"learn / read",subtext:"read, load anki, test anki",nameLinkedCards:["YouTubeStudyMusic"]}
             ]}
@@ -190,47 +188,47 @@ class Model{
 
         this.linkedCards = [
             {uniqueName:"SpotifyElectroVaporwave", domain:"Spotify", description:"Vaporwave",link:"https://open.spotify.com/playlist/2nWMkr2HwC6nfSBkN8Dg9Z"},
-			{uniqueName:"SpotifyElectroSynthwave", domain:"Spotify", description:"Synthwave",link:"https://open.spotify.com/playlist/5brFbLsjwb1hfSEXAIoNUZ"},
-			{uniqueName:"SpotifyOSTFight", domain:"Spotify", description:"Fight OST",link:"https://open.spotify.com/playlist/0wyrTc3kR0dDe12ug5TUBU"},
-			{uniqueName:"SpotifyElectroOutrun", domain:"Spotify", description:"Outrun",link:"https://open.spotify.com/playlist/4HRTw7yBrKP4c7ot2oEuWZ"},
-			{uniqueName:"SpotifyPopPop", domain:"Spotify", description:"Pop",link:"https://open.spotify.com/playlist/5IhmK5DnA7xDOHY2YpeouR"},
-			{uniqueName:"SpotifyMixLongSongs", domain:"Spotify", description:"Long Songs",link:"https://open.spotify.com/playlist/2zJSWrA1lHapRl2X4Av09T"},
-			{uniqueName:"SpotifyMetalMetal", domain:"Spotify", description:"Metal",link:"https://open.spotify.com/playlist/4erlXcZTwQo7n8i0iTukf7"},
-			{uniqueName:"YoutubePlaylistElvenpath", domain:"YouTube", description:"Tales From the Elvenpath",link:"https://www.youtube.com/watch?v=VxIyPIRzLH0&list=PLaKGqsgrt0cJ7WZ8x6BXrMIURK2E1-guH"},
+            {uniqueName:"SpotifyElectroSynthwave", domain:"Spotify", description:"Synthwave",link:"https://open.spotify.com/playlist/5brFbLsjwb1hfSEXAIoNUZ"},
+            {uniqueName:"SpotifyOSTFight", domain:"Spotify", description:"Fight OST",link:"https://open.spotify.com/playlist/0wyrTc3kR0dDe12ug5TUBU"},
+            {uniqueName:"SpotifyElectroOutrun", domain:"Spotify", description:"Outrun",link:"https://open.spotify.com/playlist/4HRTw7yBrKP4c7ot2oEuWZ"},
+            {uniqueName:"SpotifyPopPop", domain:"Spotify", description:"Pop",link:"https://open.spotify.com/playlist/5IhmK5DnA7xDOHY2YpeouR"},
+            {uniqueName:"SpotifyMixLongSongs", domain:"Spotify", description:"Long Songs",link:"https://open.spotify.com/playlist/2zJSWrA1lHapRl2X4Av09T"},
+            {uniqueName:"SpotifyMetalMetal", domain:"Spotify", description:"Metal",link:"https://open.spotify.com/playlist/4erlXcZTwQo7n8i0iTukf7"},
+            {uniqueName:"YoutubePlaylistElvenpath", domain:"YouTube", description:"Tales From the Elvenpath",link:"https://www.youtube.com/watch?v=VxIyPIRzLH0&list=PLaKGqsgrt0cJ7WZ8x6BXrMIURK2E1-guH"},
             {uniqueName:"SpotifyAlbumShadowsOfTheDyingSun", domain:"Spotify", description:"Shadows of the Dying Sun",link:"https://open.spotify.com/album/0iYAnDAQLAOXIl5bUAfYG3"},
-			{uniqueName:"ListChillPodcasts", domain:"List", description:"Chill Podcasts",link:"https://escapemod.github.io/chillpodcasts/"},
-			{uniqueName:"SpotifyRockRock", domain:"Spotify", description:"Rock",link:"https://open.spotify.com/playlist/15ikqLYNTtSAfdl2wRrYAO"},
-			{uniqueName:"SpotifyAlbumHimalaya", domain:"Spotify", description:"Himalaya",link:"https://open.spotify.com/album/0bBdlVINqpOhw9e8YRVB1J"},
-			{uniqueName:"SpotifyRockSwing", domain:"Spotify", description:"Swing",link:"https://open.spotify.com/playlist/4swSBKCt31mrwLyQDi6Nc3"},
-			{uniqueName:"SpotifyRockIndie", domain:"Spotify", description:"Indie Rock",link:"https://open.spotify.com/playlist/7eihWPjYz2UOBa3AxjTOC8"},
-			{uniqueName:"SpotifyRockPsychodelic", domain:"Spotify", description:"Psychodelic Rock",link:"https://open.spotify.com/playlist/31FFn6pny7aZSATwU32Uw2"},
-			{uniqueName:"SpotifyRockPunk", domain:"Spotify", description:"Punk Rock",link:"https://open.spotify.com/playlist/3G1nqjuFQHaCam0SiGVwcf"},
-			{uniqueName:"SpotifyJazzPop", domain:"Spotify", description:"50s Pop",link:"https://open.spotify.com/playlist/0TQtgWXQiAKvbi9gLJyffh"},
-			{uniqueName:"SpotifyJazzSwing", domain:"Spotify", description:"Jazz",link:"https://open.spotify.com/playlist/4roP0vumuqEyuQDsPID6pK"},
-			{uniqueName:"SpotifyHipHopLofi", domain:"Spotify", description:"lo fi",link:"https://open.spotify.com/playlist/6JgKb8W1Y30f6QtfgFLXPm"},
-			{uniqueName:"SpotifyOSTAmbiente", domain:"Spotify", description:"Ambiente OST",link:"https://open.spotify.com/playlist/5aprBhYKDG6mAK0ywkas9Y"},
-			{uniqueName:"SpotifySTEEEZYASFUCKRelaxLofi", domain:"Spotify", description:"STEEEZYASFUCK",link:"https://open.spotify.com/playlist/28gkj3su0EjS9tD20XTG9T"},
+            {uniqueName:"ListChillPodcasts", domain:"List", description:"Chill Podcasts",link:"https://escapemod.github.io/chillpodcasts/"},
+            {uniqueName:"SpotifyRockRock", domain:"Spotify", description:"Rock",link:"https://open.spotify.com/playlist/15ikqLYNTtSAfdl2wRrYAO"},
+            {uniqueName:"SpotifyAlbumHimalaya", domain:"Spotify", description:"Himalaya",link:"https://open.spotify.com/album/0bBdlVINqpOhw9e8YRVB1J"},
+            {uniqueName:"SpotifyRockSwing", domain:"Spotify", description:"Swing",link:"https://open.spotify.com/playlist/4swSBKCt31mrwLyQDi6Nc3"},
+            {uniqueName:"SpotifyRockIndie", domain:"Spotify", description:"Indie Rock",link:"https://open.spotify.com/playlist/7eihWPjYz2UOBa3AxjTOC8"},
+            {uniqueName:"SpotifyRockPsychodelic", domain:"Spotify", description:"Psychodelic Rock",link:"https://open.spotify.com/playlist/31FFn6pny7aZSATwU32Uw2"},
+            {uniqueName:"SpotifyRockPunk", domain:"Spotify", description:"Punk Rock",link:"https://open.spotify.com/playlist/3G1nqjuFQHaCam0SiGVwcf"},
+            {uniqueName:"SpotifyJazzPop", domain:"Spotify", description:"50s Pop",link:"https://open.spotify.com/playlist/0TQtgWXQiAKvbi9gLJyffh"},
+            {uniqueName:"SpotifyJazzSwing", domain:"Spotify", description:"Jazz",link:"https://open.spotify.com/playlist/4roP0vumuqEyuQDsPID6pK"},
+            {uniqueName:"SpotifyHipHopLofi", domain:"Spotify", description:"lo fi",link:"https://open.spotify.com/playlist/6JgKb8W1Y30f6QtfgFLXPm"},
+            {uniqueName:"SpotifyOSTAmbiente", domain:"Spotify", description:"Ambiente OST",link:"https://open.spotify.com/playlist/5aprBhYKDG6mAK0ywkas9Y"},
+            {uniqueName:"SpotifySTEEEZYASFUCKRelaxLofi", domain:"Spotify", description:"STEEEZYASFUCK",link:"https://open.spotify.com/playlist/28gkj3su0EjS9tD20XTG9T"},
             {uniqueName:"YouTubeWatchLaterList", domain:"YouTube", description:"watch later",link:"https://www.youtube.com/playlist?list=WL"},
             {uniqueName:"YouTubeAniGameOST", domain:"YouTube", description:"AniGame OST",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TLhV469-1XJd5_VVHuHLRCn"},
-			{uniqueName:"YouTubeStudyMusic", domain:"YouTube", description:"Study Music",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TIR15cz86MvNf5y_1HVRBts"},
-			{uniqueName:"Imgur", domain:"self", description:"Imgur",link:"https://imgur.com/"},
-			{uniqueName:"Reddit", domain:"self", description:"Reddit",link:"https://www.reddit.com/"},
-			{uniqueName:"ListStoryGames", domain:"List", description:"Story Games",link:"https://escapemod.github.io/storygames/"},
-			{uniqueName:"ListFastGames", domain:"List", description:"Fast Games",link:"https://escapemod.github.io/fastgames/"},
-			{uniqueName:"ListInformativePodcasts", domain:"List", description:"Informative Podcasts",link:"https://escapemod.github.io/informativepodcasts/"},
-			{uniqueName:"YouTubeDeepsleep", domain:"YouTube", description:"deepsleep",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TJ4mhhrBCP-2dX2x7D8PBMI"},
-			{uniqueName:"YouTubeSynthwave", domain:"YouTube", description:"Synthwave",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TKhOBXx-JvgtRZdjVKzujl0"},
+            {uniqueName:"YouTubeStudyMusic", domain:"YouTube", description:"Study Music",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TIR15cz86MvNf5y_1HVRBts"},
+            {uniqueName:"Imgur", domain:"self", description:"Imgur",link:"https://imgur.com/"},
+            {uniqueName:"Reddit", domain:"self", description:"Reddit",link:"https://www.reddit.com/"},
+            {uniqueName:"ListStoryGames", domain:"List", description:"Story Games",link:"https://escapemod.github.io/storygames/"},
+            {uniqueName:"ListFastGames", domain:"List", description:"Fast Games",link:"https://escapemod.github.io/fastgames/"},
+            {uniqueName:"ListInformativePodcasts", domain:"List", description:"Informative Podcasts",link:"https://escapemod.github.io/informativepodcasts/"},
+            {uniqueName:"YouTubeDeepsleep", domain:"YouTube", description:"deepsleep",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TJ4mhhrBCP-2dX2x7D8PBMI"},
+            {uniqueName:"YouTubeSynthwave", domain:"YouTube", description:"Synthwave",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TKhOBXx-JvgtRZdjVKzujl0"},
             {uniqueName:"YouTubeHypercode", domain:"YouTube", description:"hypercode",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TIKmrT3_mX9IQu050W1BkA-"},
-			{uniqueName:"YouTubeVydiaLofi", domain:"YouTube", description:"vydia lofi",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TKtcjFvWvpccJ04dU2-dt6Y"},
-			{uniqueName:"ImgurLifeHackFreeCourses", domain:"Imgur", description:"free courses",link:"https://imgur.com/gallery/55Z3S"},
-			{uniqueName:"LinkFreeCodeCamp", domain:"Link", description:"freeCodeCamp",link:"https://www.freecodecamp.org"},
-			{uniqueName:"TrelloStudyBoard", domain:"Trello", description:"Study Board",link:"https://trello.com/b/SBSjvyYw/3-school-board"},
-			{uniqueName:"TrelloStudyProjectsBoards", domain:"Trello", description:"Project Boards",link:"https://trello.com/grisons"},
-			{uniqueName:"", domain:"", description:"",link:""},
-			{uniqueName:"", domain:"", description:"",link:""},
-			{uniqueName:"", domain:"", description:"",link:""},
-			{uniqueName:"", domain:"", description:"",link:""},
-			{uniqueName:"", domain:"", description:"",link:""}
+            {uniqueName:"YouTubeVydiaLofi", domain:"YouTube", description:"vydia lofi",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TKtcjFvWvpccJ04dU2-dt6Y"},
+            {uniqueName:"ImgurLifeHackFreeCourses", domain:"Imgur", description:"free courses",link:"https://imgur.com/gallery/55Z3S"},
+            {uniqueName:"LinkFreeCodeCamp", domain:"Link", description:"freeCodeCamp",link:"https://www.freecodecamp.org"},
+            {uniqueName:"TrelloStudyBoard", domain:"Trello", description:"Study Board",link:"https://trello.com/b/SBSjvyYw/3-school-board"},
+            {uniqueName:"TrelloStudyProjectsBoards", domain:"Trello", description:"Project Boards",link:"https://trello.com/grisons"},
+            {uniqueName:"LinkMAL", domain:"Link", description:"MAL",link:"https://myanimelist.net/"},
+            {uniqueName:"LinkSouthPark", domain:"Link", description:"South Park",link:"https://www.southpark.de/"},
+            {uniqueName:"", domain:"", description:"",link:""},
+            {uniqueName:"", domain:"", description:"",link:""},
+            {uniqueName:"", domain:"", description:"",link:""}
 
         ];
 
