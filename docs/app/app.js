@@ -213,7 +213,7 @@ class Model{
             {uniqueName:"YouTubeStudyMusic", domain:"YouTube", description:"Study Music",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TIR15cz86MvNf5y_1HVRBts"},
             {uniqueName:"Imgur", domain:"self", description:"Imgur",link:"https://imgur.com/"},
             {uniqueName:"Reddit", domain:"self", description:"Reddit",link:"https://www.reddit.com/"},
-            {uniqueName:"ListStoryGames", domain:"List", description:"Story Games",link:"https://escapemod.github.io/storygames/"},
+            {uniqueName:"ListStoryGames", domain:"none", description:"Story Games",alternativeTag:'Star Wars Jedi: Fallen Order',link:"https://escapemod.github.io/storygames/"},
             {uniqueName:"ListFastGames", domain:"List", description:"Fast Games",link:"https://escapemod.github.io/fastgames/"},
             {uniqueName:"ListInformativePodcasts", domain:"List", description:"Informative Podcasts",link:"https://escapemod.github.io/informativepodcasts/"},
             {uniqueName:"YouTubeDeepsleep", domain:"YouTube", description:"deepsleep",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TJ4mhhrBCP-2dX2x7D8PBMI"},
@@ -448,12 +448,20 @@ class View{
         let html = '';
         html += `<h1>Choose A Link</h1>`;
 
-
         linkedCards.forEach(card => {
 
-            html += `<a class='linked-card' href="${card.link}" id='${card.unqiueName}'><div>${card.description}
-            <br><span class="domain-field ${card.domain.toLowerCase()}">${card.domain}</span>
-            </div></a>`;
+            if(card.domain == 'none'){
+                html += `<a class='linked-card' href="${card.link}" id='${card.unqiueName}'><div>${card.description}
+                <br><span class="alternative-tag-field">${card.alternativeTag}</span>
+                </div></a>`;
+
+            }else{
+                html += `<a class='linked-card' href="${card.link}" id='${card.unqiueName}'><div>${card.description}
+                <br><span class="domain-field ${card.domain.toLowerCase()}">${card.domain}</span>
+                </div></a>`;
+            }
+
+            
         });
 
         document.getElementById('container').innerHTML = html;
