@@ -9,13 +9,13 @@ body{
     padding: 10em 15em;
 }
 
-.domain-field{
+.domain-field, .alternative-tag-field{
     border-radius: 50px;
     font-size: 0.8em;
     padding: 0.1em;
 }
 
-.list{
+.list, .alternative-tag-field{
     border-radius: 5px;
     border: 2px solid #fff;
     background-color: #fff;
