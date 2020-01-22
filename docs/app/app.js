@@ -112,40 +112,35 @@ class Model{
 
         this.activities = [
             {location:"work",state:"tired",options:[
-                {maintext:"internet culture",subtext:"imgur",nameLinkedCards:["Imgur"]},
                 {maintext:"go for a walk",subtext:"",nameLinkedCards:[]},
-                {maintext:"socialize",subtext:"",nameLinkedCards:[]}
+                {maintext:"connect",subtext:"",nameLinkedCards:[]},
+                {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]}
             ]},
             {location:"work",state:"awake",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave"]},
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyElectroVaporwave","YouTubeStudyMusic"]},
-                {maintext:"learn sth",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","ImgurLifeHackFreeCourses","YouTubeStudyMusic"]}
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyElectroVaporwave","YouTubeStudyMusic"]}
             ]},
             {location:"work",state:"restless",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyElectroVaporwave","YouTubeStudyMusic"]},
-                {maintext:"learn sth",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","ImgurLifeHackFreeCourses","YouTubeStudyMusic"]}
+                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyElectroVaporwave","YouTubeStudyMusic"]}
             ]},
             {location:"home",state:"tired",options:[
                 {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
-                {maintext:"play fast game",subtext:"apex, mirror's edge",nameLinkedCards:["ListFastGames"]},
-                {maintext:"internet culture",subtext:"imgur",nameLinkedCards:["Imgur"]},
                 {maintext:"chill with podcast",subtext:"",nameLinkedCards:["ListChillPodcasts"]}
             ]},
             {location:"home",state:"awake",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave"]},
-                {maintext:"learn / read ",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]},
+                {maintext:"read",subtext:"book, manga",nameLinkedCards:["LinkMAL"]},
+                {maintext:"record",subtext:"audio",nameLinkedCards:[]},
                 {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyElectroVaporwave","YouTubeStudyMusic"]}
             ]},
             {location:"home",state:"restless",options:[
-                {maintext:"meditate",subtext:"flex, work out, meditation",nameLinkedCards:["YouTubeDeepsleep"]},
-                {maintext:"story",subtext:"",nameLinkedCards:["LinkMAL","ListStoryGames","YouTubeStudyMusic"]},
-                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["LinkMAL","YouTubeWatchLaterList","LinkSouthPark"]}
+                {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
+                {maintext:"record",subtext:"audio",nameLinkedCards:[]},
+                {maintext:"go for a walk",subtext:"",nameLinkedCards:[]}
             ]},
             {location:"school",state:"tired",options:[
                 {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
-                {maintext:"socialize",subtext:"",nameLinkedCards:[]},
-                {maintext:"internet culture",subtext:"imgur",nameLinkedCards:["Imgur"]}
+                {maintext:"connect",subtext:"",nameLinkedCards:[]}
             ]},
             {location:"school",state:"awake",options:[
                 {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]},
@@ -153,14 +148,12 @@ class Model{
                 {maintext:"assignements",subtext:"",nameLinkedCards:["TrelloStudyProjectsBoards"]}
             ]},
             {location:"school",state:"restless",options:[
-                {maintext:"internet culture",subtext:"reddit",nameLinkedCards:["Reddit"]},
                 {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
                 {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
             {location:"train",state:"tired",options:[
-                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
-                {maintext:"pkm with music",subtext:"in-game",nameLinkedCards:["YouTubeVydiaLofi","SpotifyRockRock"]},
-                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["YouTubeWatchLaterList"]}
+                {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
+                {maintext:"audionap",subtext:"podcast, book, music",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]}
             ]},
             {location:"train",state:"awake",options:[
                 {maintext:"assignements",subtext:"",nameLinkedCards:["TrelloStudyProjectsBoards"]},
@@ -168,11 +161,10 @@ class Model{
             ]},
             {location:"train",state:"restless",options:[
                 {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
-                {maintext:"informative podcast",subtext:"",nameLinkedCards:["ListInformativePodcasts"]},
-                {maintext:"watch stored videos",subtext:"youtube, series, movies",nameLinkedCards:["LinkMAL","YouTubeWatchLaterList","LinkSouthPark"]}
+                {maintext:"informative podcast",subtext:"",nameLinkedCards:["ListInformativePodcasts"]}
             ]},
             {location:"buslike",state:"tired",options:[
-                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
+                {maintext:"audionap",subtext:"podcast, book, music",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
                 {maintext:"daydream and music",subtext:"",nameLinkedCards:["YouTubeAniGameOST","YouTubeStudyMusic"]},
                 {maintext:"chill with podcast",subtext:"",nameLinkedCards:["ListChillPodcasts"]}
             ]},
@@ -226,7 +218,7 @@ class Model{
             {uniqueName:"TrelloStudyProjectsBoards", domain:"Trello", description:"Project Boards",link:"https://trello.com/grisons"},
             {uniqueName:"LinkMAL", domain:"Link", description:"MAL",link:"https://myanimelist.net/"},
             {uniqueName:"LinkSouthPark", domain:"Link", description:"South Park",link:"https://www.southpark.de/"},
-            {uniqueName:"", domain:"", description:"",link:""},
+            {uniqueName:"ImgurOfficeFlexing", domain:"Imgur", description:"Office Flexing",link:"https://imgur.com/gallery/22G3MYj"},
             {uniqueName:"", domain:"", description:"",link:""},
             {uniqueName:"", domain:"", description:"",link:""}
 
