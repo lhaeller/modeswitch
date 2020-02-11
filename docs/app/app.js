@@ -106,11 +106,12 @@ class Model{
         this.QnA = [
             {question:"WHERE ARE YOU?",answers:[{value:"train",text:"on the train"},{value:"buslike",text:"bus / tram"},{value:"home",text:"at home"},{value:"school",text:"at school"},{value:"work",text:"at work"}]},
 
-            {question:"HOW ARE YOU?",answers:[{value:"tired",text:"tired af",alternativetext:"burned mind"},{value:"awake",text:"wide awake" ,alternativetext:"awake"},{value:"restless", text:"bored",alternativetext:"restless"}]},
+            {question:"HOW ARE YOU?",answers:[{value:"tired",text:"tired af",alternativetext:"burned mind"},{value:"awake",text:"wide awake" ,alternativetext:"awake"},{value:"restless", text:"bored",alternativetext:"restless"}, {value:"lonely", text:"lonely",alternativetext:"lonely"}]}
 
         ];
 
         this.activities = [
+
             {location:"work",state:"tired",options:[
                 {maintext:"go for a walk",subtext:"",nameLinkedCards:[]},
                 {maintext:"connect",subtext:"",nameLinkedCards:[]},
@@ -124,6 +125,8 @@ class Model{
                 {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
                 {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyElectroVaporwave","YouTubeStudyMusic"]}
             ]},
+
+
             {location:"home",state:"tired",options:[
                 {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
                 {maintext:"chill with podcast",subtext:"",nameLinkedCards:["ListChillPodcasts"]}
@@ -138,6 +141,8 @@ class Model{
                 {maintext:"record",subtext:"audio",nameLinkedCards:[]},
                 {maintext:"go for a walk",subtext:"",nameLinkedCards:[]}
             ]},
+
+
             {location:"school",state:"tired",options:[
                 {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
                 {maintext:"connect",subtext:"",nameLinkedCards:[]}
@@ -151,6 +156,8 @@ class Model{
                 {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
                 {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
             ]},
+
+
             {location:"train",state:"tired",options:[
                 {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
                 {maintext:"audionap",subtext:"podcast, book, music",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]}
@@ -163,6 +170,8 @@ class Model{
                 {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
                 {maintext:"informative podcast",subtext:"",nameLinkedCards:["ListInformativePodcasts"]}
             ]},
+
+
             {location:"buslike",state:"tired",options:[
                 {maintext:"audionap",subtext:"podcast, book, music",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
                 {maintext:"daydream and music",subtext:"",nameLinkedCards:["YouTubeAniGameOST","YouTubeStudyMusic"]},
@@ -219,7 +228,20 @@ class Model{
             {uniqueName:"LinkMAL", domain:"Link", description:"MAL",link:"https://myanimelist.net/"},
             {uniqueName:"LinkSouthPark", domain:"Link", description:"South Park",link:"https://www.southpark.de/"},
             {uniqueName:"ImgurOfficeFlexing", domain:"Imgur", description:"Office Flexing",link:"https://imgur.com/gallery/22G3MYj"},
-            {uniqueName:"", domain:"", description:"",link:""},
+            
+            // game titles
+            {uniqueName:"PSNWitcher3", domain:"PSN", description:"Witcher 3",link:""},
+            {uniqueName:"PSNPersona5", domain:"PSN", description:"Persona 5",link:""},
+            {uniqueName:"PSNNieRAutomata", domain:"PSN", description:"NieR: Automata",link:""},
+            {uniqueName:"PSNMirrorsEdgeCatalyst", domain:"PSN", description:"Mirror's Edge Catalyst",link:""},
+            {uniqueName:"PSNDoom", domain:"PSN", description:"Doom",link:""},
+            {uniqueName:"PSNFallout 4", domain:"PSN", description:"Fallout 4",link:""},
+            {uniqueName:"PSNCoD", domain:"PSN", description:"CoD",link:""},
+            {uniqueName:"PSNApex", domain:"PSN", description:"Apex: Legends",link:""},
+            {uniqueName:"PCVCR", domain:"PC", description:"VCR",link:""},
+            {uniqueName:"PSNBattlefield1", domain:"PSN", description:"Battlefield 1",link:""},
+
+            // template
             {uniqueName:"", domain:"", description:"",link:""}
 
         ];
