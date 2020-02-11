@@ -110,80 +110,107 @@ class Model{
 
         ];
 
+
+
+
         this.activities = [
 
+            {location:"work",state:"awake",options:[
+                {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard"]}
+            ]},
             {location:"work",state:"tired",options:[
-                {maintext:"go for a walk",subtext:"",nameLinkedCards:[]},
-                {maintext:"connect",subtext:"",nameLinkedCards:[]},
                 {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]}
             ]},
-            {location:"work",state:"awake",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave"]},
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyElectroVaporwave","YouTubeStudyMusic"]}
-            ]},
-            {location:"work",state:"restless",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyElectroVaporwave","YouTubeStudyMusic"]}
-            ]},
-
-
-            {location:"home",state:"tired",options:[
-                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
-                {maintext:"chill with podcast",subtext:"",nameLinkedCards:["ListChillPodcasts"]}
-            ]},
-            {location:"home",state:"awake",options:[
-                {maintext:"read",subtext:"book, manga",nameLinkedCards:["LinkMAL"]},
-                {maintext:"record",subtext:"audio",nameLinkedCards:[]},
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyElectroVaporwave","YouTubeStudyMusic"]}
-            ]},
-            {location:"home",state:"restless",options:[
+            {location:"work",state:"restless",options:[ // = bored
+                {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
                 {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
-                {maintext:"record",subtext:"audio",nameLinkedCards:[]},
-                {maintext:"go for a walk",subtext:"",nameLinkedCards:[]}
+                {maintext:"learn with course",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","LinkCoursera","LinkGoogleCloudTraining"]}
             ]},
-
-
-            {location:"school",state:"tired",options:[
-                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
+            {location:"work",state:"lonely",options:[
                 {maintext:"connect",subtext:"",nameLinkedCards:[]}
             ]},
-            {location:"school",state:"awake",options:[
-                {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]},
-                {maintext:"homework",subtext:"",nameLinkedCards:["TrelloStudyBoard"]},
-                {maintext:"assignements",subtext:"",nameLinkedCards:["TrelloStudyProjectsBoards"]}
-            ]},
-            {location:"school",state:"restless",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
-                {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
-            ]},
 
+            /********************************************/
 
-            {location:"train",state:"tired",options:[
+            {location:"home",state:"awake",options:[
+                {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
+                {maintext:"homework",subtext:"",nameLinkedCards:["TrelloStudyBoard","TrelloStudyProjectsBoards"]},
+                {maintext:"flex legs",subtext:"",nameLinkedCards:[""]},
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard"]}
+            ]},
+            {location:"home",state:"tired",options:[
+                {maintext:"netflix",subtext:"",nameLinkedCards:[""]},
+                {maintext:"fast game",subtext:"",nameLinkedCards:["PSNMirrorsEdgeCatalyst","PSNDoom"]},
+                {maintext:"sandbox game",subtext:"",nameLinkedCards:["PSNWitcher3","PSNPersona5","PSNNieRAutomata","PSNFallout"]},
                 {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
-                {maintext:"audionap",subtext:"podcast, book, music",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]}
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]}
             ]},
+            {location:"home",state:"restless",options:[ // = bored
+                {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
+                {maintext:"read manga",subtext:"",nameLinkedCards:["LinkMAL"]},
+                {maintext:"fast game",subtext:"",nameLinkedCards:["PSNMirrorsEdgeCatalyst","PSNDoom"]},
+                {maintext:"flex legs",subtext:"",nameLinkedCards:[""]},
+                {maintext:"learn with course",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","LinkCoursera","LinkGoogleCloudTraining"]}
+            ]},
+            {location:"home",state:"lonely",options:[
+                {maintext:"coop gaming",subtext:"",nameLinkedCards:["PSNCoD","PSNApex","PCVCR","PSNBattlefield","PSNTitanfall"]},
+                {maintext:"connect",subtext:"",nameLinkedCards:[]}
+            ]},
+
+            /********************************************/
+
+            {location:"school",state:"awake",options:[
+                {maintext:"homework",subtext:"",nameLinkedCards:["TrelloStudyBoard","TrelloStudyProjectsBoards"]},
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard"]}
+            ]},
+            {location:"school",state:"tired",options:[
+                {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]}
+            ]},
+            {location:"school",state:"restless",options:[ // = bored
+                {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
+                {maintext:"read manga",subtext:"",nameLinkedCards:["LinkMAL"]}
+            ]},
+            {location:"school",state:"lonely",options:[
+                {maintext:"connect",subtext:"",nameLinkedCards:[]}
+            ]},
+
+            /********************************************/
+
             {location:"train",state:"awake",options:[
-                {maintext:"assignements",subtext:"",nameLinkedCards:["TrelloStudyProjectsBoards"]},
-                {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
+                {maintext:"read weekly book",subtext:"",nameLinkedCards:[]},
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard"]},
+                {maintext:"learn Swedish",subtext:"",nameLinkedCards:["LinkMemrise"]}
             ]},
-            {location:"train",state:"restless",options:[
-                {maintext:"program with music",subtext:"",nameLinkedCards:["YouTubeHypercode","SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyOSTFight"]},
-                {maintext:"informative podcast",subtext:"",nameLinkedCards:["ListInformativePodcasts"]}
+            {location:"train",state:"tired",options:[
+                {maintext:"read weekly book",subtext:"",nameLinkedCards:[]},
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
+
+            ]},
+            {location:"train",state:"restless",options:[ // = bored
+                {maintext:"read weekly book",subtext:"",nameLinkedCards:[]},
+                {maintext:"learn Swedish",subtext:"",nameLinkedCards:["LinkMemrise"]}
+            ]},
+            {location:"train",state:"lonely",options:[
+                {maintext:"read weekly book",subtext:"",nameLinkedCards:[]}
             ]},
 
+            /********************************************/
 
-            {location:"buslike",state:"tired",options:[
-                {maintext:"audionap",subtext:"podcast, book, music",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
-                {maintext:"daydream and music",subtext:"",nameLinkedCards:["YouTubeAniGameOST","YouTubeStudyMusic"]},
-                {maintext:"chill with podcast",subtext:"",nameLinkedCards:["ListChillPodcasts"]}
-            ]},
             {location:"buslike",state:"awake",options:[
-                {maintext:"brainstorm problems",subtext:"programs, emails, tasks",nameLinkedCards:["SpotifyElectroVaporwave","YouTubeStudyMusic"]},
-                {maintext:"learn / read",subtext:"read, load anki, test anki, recap",nameLinkedCards:["YouTubeStudyMusic"]}
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard"]},
+                {maintext:"learn Swedish",subtext:"",nameLinkedCards:["LinkMemrise"]}
             ]},
-            {location:"buslike",state:"restless",options:[
-                {maintext:"informative podcast",subtext:"",nameLinkedCards:["ListInformativePodcasts"]},
-                {maintext:"learn / read",subtext:"read, load anki, test anki",nameLinkedCards:["YouTubeStudyMusic"]}
+            {location:"buslike",state:"tired",options:[
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]}
+            ]},
+            {location:"buslike",state:"restless",options:[ // = bored
+                {maintext:"learn Swedish",subtext:"",nameLinkedCards:["LinkMemrise"]}
+            ]},
+            {location:"buslike",state:"lonely",options:[
+                {maintext:"message someone",subtext:"",nameLinkedCards:[""]},
+                {maintext:"go online",subtext:"",nameLinkedCards:["Reddit","Imgur","4chan"]}
             ]}
         ];
 
@@ -214,6 +241,7 @@ class Model{
             {uniqueName:"YouTubeStudyMusic", domain:"YouTube", description:"Study Music",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TIR15cz86MvNf5y_1HVRBts"},
             {uniqueName:"Imgur", domain:"self", description:"Imgur",link:"https://imgur.com/"},
             {uniqueName:"Reddit", domain:"self", description:"Reddit",link:"https://www.reddit.com/"},
+            {uniqueName:"4chan", domain:"self", description:"4chan",link:"https://www.4chan.org/"},
             {uniqueName:"ListStoryGames", domain:"none", description:"Story Games",alternativeTag:'Star Wars Jedi: Fallen Order',link:"https://escapemod.github.io/storygames/"},
             {uniqueName:"ListFastGames", domain:"List", description:"Fast Games",link:"https://escapemod.github.io/fastgames/"},
             {uniqueName:"ListInformativePodcasts", domain:"List", description:"Informative Podcasts",link:"https://escapemod.github.io/informativepodcasts/"},
@@ -223,8 +251,15 @@ class Model{
             {uniqueName:"YouTubeVydiaLofi", domain:"YouTube", description:"vydia lofi",link:"https://www.youtube.com/playlist?list=PLCFIppW1R6TKtcjFvWvpccJ04dU2-dt6Y"},
             {uniqueName:"ImgurLifeHackFreeCourses", domain:"Imgur", description:"free courses",link:"https://imgur.com/gallery/55Z3S"},
             {uniqueName:"LinkFreeCodeCamp", domain:"Link", description:"freeCodeCamp",link:"https://www.freecodecamp.org"},
-            {uniqueName:"TrelloStudyBoard", domain:"Trello", description:"Study Board",link:"https://trello.com/b/SBSjvyYw/3-school-board"},
-            {uniqueName:"TrelloStudyProjectsBoards", domain:"Trello", description:"Project Boards",link:"https://trello.com/grisons"},
+            {uniqueName:"LinkCoursera", domain:"Link", description:"Coursera",link:"https://www.coursera.org/"},
+            {uniqueName:"LinkGoogleCloudTraining", domain:"Link", description:"Google Cloud Training",link:"https://cloud.google.com/training"},
+            {uniqueName:"LinkMemrise", domain:"Link", description:"Memrise",link:"https://www.memrise.com/de/"},
+            
+            
+            {uniqueName:"TrelloStudyBoard", domain:"Trello", description:"Study Board",link:"https://trello.com/b/ekrCAlMU/school-board"},
+            {uniqueName:"TrelloStudyProjectsBoards", domain:"Trello", description:"Grisons Boards",link:"https://trello.com/grisons"},
+            {uniqueName:"", domain:"TrelloTodayBoard", description:"Today",link:"https://trello.com/grisons"},
+
             {uniqueName:"LinkMAL", domain:"Link", description:"MAL",link:"https://myanimelist.net/"},
             {uniqueName:"LinkSouthPark", domain:"Link", description:"South Park",link:"https://www.southpark.de/"},
             {uniqueName:"ImgurOfficeFlexing", domain:"Imgur", description:"Office Flexing",link:"https://imgur.com/gallery/22G3MYj"},
@@ -235,11 +270,12 @@ class Model{
             {uniqueName:"PSNNieRAutomata", domain:"PSN", description:"NieR: Automata",link:""},
             {uniqueName:"PSNMirrorsEdgeCatalyst", domain:"PSN", description:"Mirror's Edge Catalyst",link:""},
             {uniqueName:"PSNDoom", domain:"PSN", description:"Doom",link:""},
-            {uniqueName:"PSNFallout 4", domain:"PSN", description:"Fallout 4",link:""},
+            {uniqueName:"PSNFallout", domain:"PSN", description:"Fallout 4",link:""},
             {uniqueName:"PSNCoD", domain:"PSN", description:"CoD",link:""},
-            {uniqueName:"PSNApex", domain:"PSN", description:"Apex: Legends",link:""},
+            {uniqueName:"PSNApex", domain:"PSN", description:"Apex",link:""},
             {uniqueName:"PCVCR", domain:"PC", description:"VCR",link:""},
-            {uniqueName:"PSNBattlefield1", domain:"PSN", description:"Battlefield 1",link:""},
+            {uniqueName:"PSNBattlefield", domain:"PSN", description:"Battlefield",link:""},
+            {uniqueName:"PSNTitanfall", domain:"PSN", description:"Titanfall",link:""},
 
             // template
             {uniqueName:"", domain:"", description:"",link:""}
