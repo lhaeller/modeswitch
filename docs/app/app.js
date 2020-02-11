@@ -301,7 +301,7 @@ class Model{
             case "work":
                 this.setAsLocation(lastAnswer);
                 console.log(`case: ${lastAnswer}`);
-                textModes = ["text","text","text"];
+                textModes = ["text","text","text","text"];
                 console.table([textModes]);
                 nextAnswers = this.loadStateDescriptions(textModes);
                 break;
@@ -310,7 +310,7 @@ class Model{
             case "home":
                 this.setAsLocation(lastAnswer);
                 console.log(`case: ${lastAnswer}`);
-                textModes = ["text","text","alternative"];
+                textModes = ["text","text","alternative","text"];
                 console.table([textModes]);
                 nextAnswers = this.loadStateDescriptions(textModes);
                 break;
@@ -318,7 +318,7 @@ class Model{
             case "school":
                 this.setAsLocation(lastAnswer);
                 console.log(`case: ${lastAnswer}`);
-                textModes = ["text","text","text"];
+                textModes = ["text","text","text","text"];
                 console.table([textModes]);
                 nextAnswers = this.loadStateDescriptions(textModes);
                 break;
@@ -327,7 +327,7 @@ class Model{
             case "train":
                 this.setAsLocation(lastAnswer);
                 console.log(`case: ${lastAnswer}`);
-                textModes = ["alternative","alternative","text"];
+                textModes = ["alternative","alternative","text","text"];
                 console.table([textModes]);
                 nextAnswers = this.loadStateDescriptions(textModes);
                 break;
@@ -335,7 +335,7 @@ class Model{
             case "buslike":
                 this.setAsLocation(lastAnswer);
                 console.log(`case: ${lastAnswer}`);
-                textModes = ["alternative","alternative","text"];
+                textModes = ["alternative","alternative","text","text"];
                 console.table([textModes]);
                 nextAnswers = this.loadStateDescriptions(textModes);
                 break;
