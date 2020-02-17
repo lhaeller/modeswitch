@@ -141,14 +141,13 @@ class Model{
                 {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard","TrelloMissionBoard","TrelloOrganizedTasksBoard"]}
             ]},
             {location:"home",state:"tired",options:[
-                {maintext:"netflix",subtext:"",nameLinkedCards:[""]},
-                {maintext:"fast game",subtext:"",nameLinkedCards:["PSNMirrorsEdgeCatalyst","PSNDoom"]},
-                {maintext:"sandbox game",subtext:"",nameLinkedCards:["PSNWitcher3","PSNPersona5","PSNNieRAutomata","PSNFallout"]},
+                {maintext:"Netflix or YouTube",subtext:"",nameLinkedCards:[""]},
                 {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
                 {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]}
             ]},
             {location:"home",state:"restless",options:[ // = bored
-                {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
+                //{maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
+                {maintext:"sandbox game",subtext:"",nameLinkedCards:["PSNWitcher3","PSNPersona5","PSNNieRAutomata","PSNFallout"]},
                 {maintext:"read manga",subtext:"",nameLinkedCards:["LinkMAL"]},
                 {maintext:"fast game",subtext:"",nameLinkedCards:["PSNMirrorsEdgeCatalyst","PSNDoom"]},
                 //{maintext:"flex legs",subtext:"",nameLinkedCards:[""]},
