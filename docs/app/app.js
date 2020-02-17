@@ -120,7 +120,8 @@ class Model{
                 {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard","TrelloOrganizedTasksBoard","TrelloJobsBoard"]}
             ]},
             {location:"work",state:"tired",options:[
-                {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]}
+                {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
+                {maintext:"connect",subtext:"",nameLinkedCards:[]}
             ]},
             {location:"work",state:"restless",options:[ // = bored
                 {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
@@ -154,7 +155,7 @@ class Model{
                 //{maintext:"learn with course",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","LinkCoursera","LinkGoogleCloudTraining"]}
             ]},
             {location:"home",state:"lonely",options:[
-                {maintext:"coop gaming",subtext:"",nameLinkedCards:["PSNCoD","PSNApex","PCVCR","PSNBattlefield","PSNTitanfall"]},
+                {maintext:"coop gaming",subtext:"",nameLinkedCards:["PSNApex","PCVCR"]},
                 {maintext:"connect",subtext:"",nameLinkedCards:[]}
             ]},
 
