@@ -117,14 +117,14 @@ class Model{
 
             {location:"work",state:"awake",options:[
                 {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
-                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard"]}
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard","TrelloOrganizedTasksBoard","TrelloJobsBoard"]}
             ]},
             {location:"work",state:"tired",options:[
                 {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]}
             ]},
             {location:"work",state:"restless",options:[ // = bored
                 {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
-                {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
+                //{maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
                 {maintext:"learn with course",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","LinkCoursera","LinkGoogleCloudTraining"]}
             ]},
             {location:"work",state:"lonely",options:[
@@ -136,8 +136,8 @@ class Model{
             {location:"home",state:"awake",options:[
                 {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
                 {maintext:"homework",subtext:"",nameLinkedCards:["TrelloStudyBoard","TrelloStudyProjectsBoards"]},
-                {maintext:"flex legs",subtext:"",nameLinkedCards:[""]},
-                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard"]}
+                //{maintext:"flex legs",subtext:"",nameLinkedCards:[""]},
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard","TrelloMissionBoard","TrelloOrganizedTasksBoard"]}
             ]},
             {location:"home",state:"tired",options:[
                 {maintext:"netflix",subtext:"",nameLinkedCards:[""]},
@@ -150,8 +150,8 @@ class Model{
                 {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
                 {maintext:"read manga",subtext:"",nameLinkedCards:["LinkMAL"]},
                 {maintext:"fast game",subtext:"",nameLinkedCards:["PSNMirrorsEdgeCatalyst","PSNDoom"]},
-                {maintext:"flex legs",subtext:"",nameLinkedCards:[""]},
-                {maintext:"learn with course",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","LinkCoursera","LinkGoogleCloudTraining"]}
+                //{maintext:"flex legs",subtext:"",nameLinkedCards:[""]},
+                //{maintext:"learn with course",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","LinkCoursera","LinkGoogleCloudTraining"]}
             ]},
             {location:"home",state:"lonely",options:[
                 {maintext:"coop gaming",subtext:"",nameLinkedCards:["PSNCoD","PSNApex","PCVCR","PSNBattlefield","PSNTitanfall"]},
@@ -162,7 +162,7 @@ class Model{
 
             {location:"school",state:"awake",options:[
                 {maintext:"homework",subtext:"",nameLinkedCards:["TrelloStudyBoard","TrelloStudyProjectsBoards"]},
-                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard"]}
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard","TrelloMissionBoard","TrelloOrganizedTasksBoard","TrelloJobsBoard"]}
             ]},
             {location:"school",state:"tired",options:[
                 {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
@@ -180,7 +180,7 @@ class Model{
 
             {location:"train",state:"awake",options:[
                 {maintext:"read weekly book",subtext:"",nameLinkedCards:[]},
-                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard"]},
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard","TrelloMissionBoard","TrelloOrganizedTasksBoard"]},
                 {maintext:"learn Swedish",subtext:"",nameLinkedCards:["LinkMemrise"]}
             ]},
             {location:"train",state:"tired",options:[
@@ -190,20 +190,23 @@ class Model{
             ]},
             {location:"train",state:"restless",options:[ // = bored
                 {maintext:"read weekly book",subtext:"",nameLinkedCards:[]},
-                {maintext:"learn Swedish",subtext:"",nameLinkedCards:["LinkMemrise"]}
+                {maintext:"learn Swedish",subtext:"",nameLinkedCards:["LinkMemrise"]},
+                {maintext:"watch youtube",subtext:"",nameLinkedCards:["YouTubeWatchLaterList"]}
             ]},
             {location:"train",state:"lonely",options:[
-                {maintext:"read weekly book",subtext:"",nameLinkedCards:[]}
+                {maintext:"message someone",subtext:"",nameLinkedCards:[""]},
+                {maintext:"go online",subtext:"",nameLinkedCards:["Reddit","Imgur","4chan"]}
             ]},
 
             /********************************************/
 
             {location:"buslike",state:"awake",options:[
-                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard"]},
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard","TrelloOrganizedTasksBoard"]},
                 {maintext:"learn Swedish",subtext:"",nameLinkedCards:["LinkMemrise"]}
             ]},
             {location:"buslike",state:"tired",options:[
-                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]}
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
+                {maintext:"watch youtube",subtext:"",nameLinkedCards:["YouTubeWatchLaterList"]}
             ]},
             {location:"buslike",state:"restless",options:[ // = bored
                 {maintext:"learn Swedish",subtext:"",nameLinkedCards:["LinkMemrise"]}
@@ -257,8 +260,11 @@ class Model{
             
             
             {uniqueName:"TrelloStudyBoard", domain:"Trello", description:"Study Board",link:"https://trello.com/b/ekrCAlMU/school-board"},
-            {uniqueName:"TrelloStudyProjectsBoards", domain:"Trello", description:"Grisons Boards",link:"https://trello.com/grisons"},
-            {uniqueName:"", domain:"TrelloTodayBoard", description:"Today",link:"https://trello.com/grisons"},
+            //{uniqueName:"TrelloStudyProjectsBoards", domain:"Trello", description:"Grisons Boards",link:"https://trello.com/grisons"},
+            {uniqueName:"TrelloTodayBoard", domain:"Trello", description:"drive focus",link:"https://trello.com/b/QmmVRgM8/1-todo"},
+            {uniqueName:"TrelloMissionBoard", domain:"Trello", description:"work on mission",link:"https://trello.com/b/I97RmIJ9/4-ongoing-mission"},
+            {uniqueName:"TrelloJobsBoard", domain:"Trello", description:"work on jobs",link:"https://trello.com/b/HgGbRFv3/5-ongoing-jobs"},
+            {uniqueName:"TrelloOrganizedTasksBoard", domain:"Trello", description:"work on tasks",link:"https://trello.com/b/wk7DIPSQ/0-collect-organize"},
 
             {uniqueName:"LinkMAL", domain:"Link", description:"MAL",link:"https://myanimelist.net/"},
             {uniqueName:"LinkSouthPark", domain:"Link", description:"South Park",link:"https://www.southpark.de/"},
