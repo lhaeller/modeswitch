@@ -261,7 +261,7 @@ class Model{
             
             
             {uniqueName:"TrelloStudyBoard", domain:"Trello", description:"Study Board",link:"https://trello.com/b/ekrCAlMU/school-board"},
-            //{uniqueName:"TrelloStudyProjectsBoards", domain:"Trello", description:"Grisons Boards",link:"https://trello.com/grisons"},
+            {uniqueName:"TrelloStudyProjectsBoards", domain:"Trello", description:"Grisons Boards",link:"https://trello.com/grisons"},
             {uniqueName:"TrelloTodayBoard", domain:"Trello", description:"drive focus",link:"https://trello.com/b/QmmVRgM8/1-todo"},
             {uniqueName:"TrelloMissionBoard", domain:"Trello", description:"work on mission",link:"https://trello.com/b/I97RmIJ9/4-ongoing-mission"},
             {uniqueName:"TrelloJobsBoard", domain:"Trello", description:"work on jobs",link:"https://trello.com/b/HgGbRFv3/5-ongoing-jobs"},
