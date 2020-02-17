@@ -255,7 +255,7 @@ class Model{
             {uniqueName:"ImgurLifeHackFreeCourses", domain:"Imgur", description:"free courses",link:"https://imgur.com/gallery/55Z3S"},
             {uniqueName:"LinkFreeCodeCamp", domain:"Link", description:"freeCodeCamp",link:"https://www.freecodecamp.org"},
             {uniqueName:"LinkCoursera", domain:"Link", description:"Coursera",link:"https://www.coursera.org/"},
-            {uniqueName:"LinkGoogleCloudTraining", domain:"Link", description:"Google Cloud Training",link:"https://cloud.google.com/training"},
+            {uniqueName:"LinkGoogleCloudTraining", domain:"Link", description:"Google Cloud Training",link:"https://google.qwiklabs.com/my_learning"},
             {uniqueName:"LinkMemrise", domain:"Link", description:"Memrise",link:"https://www.memrise.com/de/"},
             
             
