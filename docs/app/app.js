@@ -126,6 +126,7 @@ class Model{
             {location:"work",state:"restless",options:[ // = bored
                 {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
                 //{maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard","TrelloOrganizedTasksBoard","TrelloJobsBoard"]},
                 {maintext:"learn with course",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","LinkCoursera","LinkGoogleCloudTraining"]}
             ]},
             {location:"work",state:"lonely",options:[
