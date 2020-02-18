@@ -259,7 +259,7 @@ class Model{
             {uniqueName:"LinkGoogleCloudTraining", domain:"Link", description:"Google Cloud Training",link:"https://google.qwiklabs.com/my_learning"},
             {uniqueName:"LinkMemrise", domain:"Link", description:"Memrise",link:"https://www.memrise.com/de/"},
             
-            {uniqueName:"JiraActiveSprint", domain:"Jira", description:"Scrum Stories",link:"https://jira.si.siemens.cloud/secure/RapidBoard.jspa?rapidView=685&projectKey=DMGT&quickFilter=2299"}
+            {uniqueName:"JiraActiveSprint", domain:"Jira", description:"Scrum Stories",link:"https://jira.si.siemens.cloud/secure/RapidBoard.jspa?rapidView=685&projectKey=DMGT&quickFilter=2299"},
             {uniqueName:"TrelloStudyBoard", domain:"Trello", description:"Study Board",link:"https://trello.com/b/ekrCAlMU/school-board"},
             {uniqueName:"TrelloStudyProjectsBoards", domain:"Trello", description:"Grisons Boards",link:"https://trello.com/grisons"},
             {uniqueName:"TrelloTodayBoard", domain:"Trello", description:"drive focus",link:"https://trello.com/b/QmmVRgM8/1-todo"},
