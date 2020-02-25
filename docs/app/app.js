@@ -104,10 +104,20 @@ class Model{
     constructor(){
         // TODO: externalize data
         this.QnA = [
-            {question:"WHERE ARE YOU?",answers:[{value:"train",text:"on the train"},{value:"buslike",text:"bus / tram"},{value:"home",text:"at home"},{value:"school",text:"at school"},{value:"work",text:"at work"}]},
+            {question:"WHERE ARE YOU?",answers:[
+            {value:"work",text:"at work"},
+            {value:"home",text:"at home"},
+            {value:"train",text:"on the train"},
+            {value:"school",text:"at school"},
+            {value:"buslike",text:"bus / tram"}
+            ]},
 
-            {question:"HOW ARE YOU?",answers:[{value:"awake",text:"wide awake" ,alternativetext:"fired up"},{value:"tired",text:"tired",alternativetext:"burned mind"},{value:"restless", text:"bored",alternativetext:"restless"}, {value:"lonely", text:"lonely",alternativetext:"lonely"}]}
-
+            {question:"HOW ARE YOU?",answers:[
+            {value:"awake",text:"wide awake" ,alternativetext:"fired up"},
+            {value:"tired",text:"tired",alternativetext:"burned mind"},
+            {value:"restless", text:"bored",alternativetext:"restless"},
+            {value:"lonely", text:"lonely",alternativetext:"lonely"}
+            ]}
         ];
 
 
