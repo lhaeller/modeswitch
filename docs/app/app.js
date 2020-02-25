@@ -116,105 +116,109 @@ class Model{
         this.activities = [
 
             {location:"work",state:"awake",options:[
-                {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
-                {maintext:"finish tasks",subtext:"",nameLinkedCards:["JiraActiveSprint","TrelloTodayBoard","TrelloOrganizedTasksBoard","TrelloJobsBoard"]}
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["JiraActiveSprint","TrelloTodayBoard","TrelloOrganizedTasksBoard"]},
+                {maintext:"drive jobs",subtext:"",nameLinkedCards:["TrelloJobsBoard"]},
+                {maintext:"drive mission",subtext:"",nameLinkedCards:["TrelloMissionBoard"]}
+            ]},
+            {location:"work",state:"lonely",options:[ 
+                {maintext:"connect",subtext:"",nameLinkedCards:[]},
+                {maintext:"message someone",subtext:"",nameLinkedCards:[]}
             ]},
             {location:"work",state:"tired",options:[
                 {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
-                {maintext:"connect",subtext:"",nameLinkedCards:[]}
+                {maintext:"go online",subtext:"",nameLinkedCards:["Imgur"]}
             ]},
             {location:"work",state:"restless",options:[ // = bored
-                {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
-                //{maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
-                {maintext:"finish tasks",subtext:"",nameLinkedCards:["JiraActiveSprint","TrelloTodayBoard","TrelloOrganizedTasksBoard","TrelloJobsBoard"]},
-                {maintext:"learn with course",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","LinkCoursera","LinkGoogleCloudTraining"]}
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["JiraActiveSprint","TrelloTodayBoard","TrelloOrganizedTasksBoard"]},              
+                {maintext:"learn with course",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","LinkCoursera"]},
+                {maintext:"go online",subtext:"",nameLinkedCards:["Reddit"]}
             ]},
-            {location:"work",state:"lonely",options:[
-                {maintext:"connect",subtext:"",nameLinkedCards:[]}
-            ]},
+
 
             /********************************************/
 
-            {location:"home",state:"awake",options:[
-                {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
-                {maintext:"homework",subtext:"",nameLinkedCards:["TrelloStudyBoard","TrelloStudyProjectsBoards"]},
-                //{maintext:"flex legs",subtext:"",nameLinkedCards:[""]},
-                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard","TrelloMissionBoard","TrelloOrganizedTasksBoard"]}
-            ]},
             {location:"home",state:"tired",options:[
-                {maintext:"Netflix or YouTube",subtext:"",nameLinkedCards:[""]},
-                {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
-                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]}
-            ]},
-            {location:"home",state:"restless",options:[ // = bored
-                //{maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
+                {maintext:"pkm and chill",subtext:"",nameLinkedCards:["YouTubeVydiaLofi","SpotifyHipHopLofi","SpotifyRockPunk","SpotifyElectroOutrun"]},
                 {maintext:"sandbox game",subtext:"",nameLinkedCards:["PSNWitcher3","PSNPersona5","PSNNieRAutomata","PSNFallout"]},
-                {maintext:"read manga",subtext:"",nameLinkedCards:["LinkMAL"]},
-                {maintext:"fast game",subtext:"",nameLinkedCards:["PSNMirrorsEdgeCatalyst","PSNDoom"]},
-                //{maintext:"flex legs",subtext:"",nameLinkedCards:[""]},
-                //{maintext:"learn with course",subtext:"",nameLinkedCards:["LinkFreeCodeCamp","LinkCoursera","LinkGoogleCloudTraining"]}
+                {maintext:"watch video",subtext:"",nameLinkedCards:["LinkNetflix","LinkPatreon"]},
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalSymphonic","SpotifyMetalMetal","SpotifyElectroVaporwave","YouTubeSynthwave"]}
+            ]},
+            {location:"home",state:"awake",options:[
+                {maintext:"drive mission",subtext:"",nameLinkedCards:["TrelloMissionBoard"]},
+                {maintext:"write or code",subtext:"",nameLinkedCards:["SpotifyElectroOutrun","YouTubeStudyMusic","YouTubeVydiaLofi","SpotifyElectroSynthwave","SpotifyElectroVaporwave"]},
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard"]}
             ]},
             {location:"home",state:"lonely",options:[
-                {maintext:"coop gaming",subtext:"",nameLinkedCards:["PSNApex","PCVCR"]},
-                {maintext:"connect",subtext:"",nameLinkedCards:[]}
+                {maintext:"coop gaming",subtext:"",nameLinkedCards:["PSNApex","PCVRC"]},
+                {maintext:"go online",subtext:"",nameLinkedCards:["Reddit"]},
+                {maintext:"message someone",subtext:"",nameLinkedCards:[]}
+            ]},     
+            {location:"home",state:"restless",options:[ // = bored
+                {maintext:"read manga",subtext:"",nameLinkedCards:["LinkMAL"]},
+                {maintext:"flex legs",subtext:"",nameLinkedCards:[""]},
+                {maintext:"fast game",subtext:"",nameLinkedCards:["PSNMirrorsEdgeCatalyst","PSNDoom","PSNApex"]}
             ]},
 
             /********************************************/
 
             {location:"school",state:"awake",options:[
                 {maintext:"homework",subtext:"",nameLinkedCards:["TrelloStudyBoard","TrelloStudyProjectsBoards"]},
-                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard","TrelloMissionBoard","TrelloOrganizedTasksBoard","TrelloJobsBoard"]}
+                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard","TrelloOrganizedTasksBoard"]}
             ]},
             {location:"school",state:"tired",options:[
                 {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
-                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]}
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalSymphonic","SpotifyMetalMetal","SpotifyElectroVaporwave","YouTubeSynthwave"]},
+                {maintext:"go online",subtext:"",nameLinkedCards:["Imgur"]} 
             ]},
             {location:"school",state:"restless",options:[ // = bored
-                {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]},
-                {maintext:"read manga",subtext:"",nameLinkedCards:["LinkMAL"]}
+                {maintext:"drive mission",subtext:"",nameLinkedCards:["TrelloMissionBoard"]},
+                {maintext:"read manga",subtext:"",nameLinkedCards:["LinkMAL"]},
+                {maintext:"flex",subtext:"",nameLinkedCards:["ImgurOfficeFlexing"]}
             ]},
             {location:"school",state:"lonely",options:[
-                {maintext:"connect",subtext:"",nameLinkedCards:[]}
+                {maintext:"connect",subtext:"",nameLinkedCards:[]},
+                {maintext:"message someone",subtext:"",nameLinkedCards:[]},
+                {maintext:"go online",subtext:"",nameLinkedCards:["Reddit"]} 
             ]},
 
             /********************************************/
 
             {location:"train",state:"awake",options:[
-                {maintext:"read weekly book",subtext:"",nameLinkedCards:[]},
-                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard","TrelloMissionBoard","TrelloOrganizedTasksBoard"]},
-                {maintext:"learn Swedish",subtext:"",nameLinkedCards:["LinkMemrise"]}
+                {maintext:"drive mission",subtext:"",nameLinkedCards:["TrelloMissionBoard"]},
+                {maintext:"go online",subtext:"",nameLinkedCards:["Reddit"]},
+                {maintext:"read weekly book",subtext:"",nameLinkedCards:[]}
             ]},
             {location:"train",state:"tired",options:[
-                {maintext:"read weekly book",subtext:"",nameLinkedCards:[]},
-                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
-
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalSymphonic","SpotifyMetalMetal","SpotifyElectroVaporwave","YouTubeSynthwave"]},
+                {maintext:"pkm and chill",subtext:"",nameLinkedCards:["YouTubeVydiaLofi","SpotifyHipHopLofi","SpotifyRockPunk","SpotifyElectroOutrun"]},
+                {maintext:"read weekly book",subtext:"",nameLinkedCards:[]}
             ]},
             {location:"train",state:"restless",options:[ // = bored
-                {maintext:"read weekly book",subtext:"",nameLinkedCards:[]},
                 {maintext:"learn Swedish",subtext:"",nameLinkedCards:["LinkMemrise"]},
-                {maintext:"watch youtube",subtext:"",nameLinkedCards:["YouTubeWatchLaterList"]}
+                {maintext:"watch video",subtext:"",nameLinkedCards:["YouTubeWatchLaterList","LinkNetflix"]}
             ]},
             {location:"train",state:"lonely",options:[
-                {maintext:"message someone",subtext:"",nameLinkedCards:[""]},
-                {maintext:"go online",subtext:"",nameLinkedCards:["Reddit","Imgur","4chan"]}
+                {maintext:"connect",subtext:"",nameLinkedCards:[]},
+                {maintext:"message someone",subtext:"",nameLinkedCards:[]},
+                {maintext:"go online",subtext:"",nameLinkedCards:["Reddit"]} 
             ]},
 
             /********************************************/
 
             {location:"buslike",state:"awake",options:[
-                {maintext:"finish tasks",subtext:"",nameLinkedCards:["TrelloTodayBoard","TrelloOrganizedTasksBoard"]},
+                {maintext:"drive mission",subtext:"",nameLinkedCards:["TrelloMissionBoard"]},
                 {maintext:"learn Swedish",subtext:"",nameLinkedCards:["LinkMemrise"]}
             ]},
             {location:"buslike",state:"tired",options:[
-                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalMetal","SpotifyElectroVaporwave"]},
-                {maintext:"watch youtube",subtext:"",nameLinkedCards:["YouTubeWatchLaterList"]}
+                {maintext:"audionap",subtext:"",nameLinkedCards:["YouTubeDeepsleep","ListChillPodcasts","SpotifyMetalSymphonic","SpotifyMetalMetal","SpotifyElectroVaporwave","YouTubeSynthwave"]},
+                {maintext:"daydream",subtext:"",nameLinkedCards:["YouTubeAniGameOST"]}
             ]},
             {location:"buslike",state:"restless",options:[ // = bored
                 {maintext:"learn Swedish",subtext:"",nameLinkedCards:["LinkMemrise"]}
             ]},
             {location:"buslike",state:"lonely",options:[
                 {maintext:"message someone",subtext:"",nameLinkedCards:[""]},
-                {maintext:"go online",subtext:"",nameLinkedCards:["Reddit","Imgur","4chan"]}
+                {maintext:"go online",subtext:"",nameLinkedCards:["Reddit","4chan"]}
             ]}
         ];
 
@@ -226,6 +230,7 @@ class Model{
             {uniqueName:"SpotifyPopPop", domain:"Spotify", description:"Pop",link:"https://open.spotify.com/playlist/5IhmK5DnA7xDOHY2YpeouR"},
             {uniqueName:"SpotifyMixLongSongs", domain:"Spotify", description:"Long Songs",link:"https://open.spotify.com/playlist/2zJSWrA1lHapRl2X4Av09T"},
             {uniqueName:"SpotifyMetalMetal", domain:"Spotify", description:"Metal",link:"https://open.spotify.com/playlist/4erlXcZTwQo7n8i0iTukf7"},
+            {uniqueName:"SpotifyMetalSymphonic", domain:"Spotify", description:"Symphonic Metal",link:"https://open.spotify.com/playlist/6iM57uB2q287YUIMCgJbjH"},
             {uniqueName:"YoutubePlaylistElvenpath", domain:"YouTube", description:"Tales From the Elvenpath",link:"https://www.youtube.com/watch?v=VxIyPIRzLH0&list=PLaKGqsgrt0cJ7WZ8x6BXrMIURK2E1-guH"},
             {uniqueName:"SpotifyAlbumShadowsOfTheDyingSun", domain:"Spotify", description:"Shadows of the Dying Sun",link:"https://open.spotify.com/album/0iYAnDAQLAOXIl5bUAfYG3"},
             {uniqueName:"ListChillPodcasts", domain:"List", description:"Chill Podcasts",link:"https://escapemod.github.io/chillpodcasts/"},
@@ -269,8 +274,10 @@ class Model{
 
             {uniqueName:"LinkMAL", domain:"Link", description:"MAL",link:"https://myanimelist.net/"},
             {uniqueName:"LinkSouthPark", domain:"Link", description:"South Park",link:"https://www.southpark.de/"},
+            {uniqueName:"LinkNetflix", domain:"Link", description:"Netflix",link:"https://www.netflix.com/"},
+            {uniqueName:"LinkPatreon", domain:"Link", description:"Patreon",link:"https://www.patreon.com/"},
             {uniqueName:"ImgurOfficeFlexing", domain:"Imgur", description:"Office Flexing",link:"https://imgur.com/gallery/22G3MYj"},
-            
+
             // game titles
             {uniqueName:"PSNWitcher3", domain:"PSN", description:"Witcher 3",link:""},
             {uniqueName:"PSNPersona5", domain:"PSN", description:"Persona 5",link:""},
@@ -280,7 +287,7 @@ class Model{
             {uniqueName:"PSNFallout", domain:"PSN", description:"Fallout 4",link:""},
             {uniqueName:"PSNCoD", domain:"PSN", description:"CoD",link:""},
             {uniqueName:"PSNApex", domain:"PSN", description:"Apex",link:""},
-            {uniqueName:"PCVCR", domain:"PC", description:"VCR",link:""},
+            {uniqueName:"PCVRC", domain:"PC", description:"VRC",link:""},
             {uniqueName:"PSNBattlefield", domain:"PSN", description:"Battlefield",link:""},
             {uniqueName:"PSNTitanfall", domain:"PSN", description:"Titanfall",link:""},
 
